@@ -1,1 +1,17 @@
-# rock-in-rio-ladingpage
+# Rock In Rio - Lading Page
+
+## Sobre o Projeto
+Essa lading page reune videos, fotos e informações relevantes sobre o Rock In Rio 2022.
+
+## Como usar?
+Basta [clicar aqui](https://izaias.me/rock-in-rio-landing-page/) para acessar nossa página.
+
+## Tecnologias Utilizadas
+- HTML5
+- CSS3
+
+## Equipe
+- [Gabriel Vasconcelos Santos](https://github.com/GabVS4/)
+- [Izaias Machado Pessoa Neto](https://github.com/izaiasmachado)
+- [Marcos Vinicius Andrade de Sousa](https://github.com/MarcosVini9999)
+- [William Bruno Sales de Paula Lima](https://github.com/williambrunos)
