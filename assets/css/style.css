@@ -22,17 +22,6 @@ main {
     height: 100%;
 }
 
-div#lancamentos {
-    background-color: red;
-    color: #fff;
-    height: 100%;
-}
-
-div#destaque {
-    background-color: blue;
-    color: #fff;
-}
-
 /*HEADER*/
 header {
     background-color: #f5f5f5;
@@ -42,7 +31,18 @@ header {
 }
 
 /*Lançamentos*/
+div#lancamentos {
+    background-color: red;
+    color: #fff;
+    height: 100%;
+}
+
 /*Em destaques*/
+div#destaque {
+    background-color: blue;
+    color: #fff;
+}
+
 /*Últimas Avaliações*/
 /*PL 2*/
 /*PL 3*/
