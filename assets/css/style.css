@@ -1,8 +1,96 @@
+/*
+laranja #ff5629
+preto #000000
+azul #337ab7
+cinza #313131
+vermelho #cf2e2e
+branco #ffffff
+rosa #ef027c
+*/
+:root {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+body {
+  background-color: black;
+  color: white;
+}
 /*HEADER*/
 /*Lançamentos*/
 /*Em destaques*/
 /*Últimas Avaliações*/
-/*PL 2*/
+/*Lista de favoritos por usuário*/
+#favorites-list {
+  display: block;
+}
+#favorites-list h2 {
+  color: #ef027c;
+  font-size: 3rem;
+  margin-left: 2rem;
+  margin-bottom: 3rem;
+}
+.playlist {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  gap: 2rem;
+}
+.playlist iframe {
+  width: 49rem;
+  height: 36.66rem;
+}
+.playlistInfo {
+  background-color: #313131;
+  border: 0.1rem ridge #313131;
+}
+.playlistInfo h3,
+.playlistInfo h4 {
+  margin-left: 0.8rem;
+}
+.playlistItens {
+  background: transparent;
+  border: 0.1rem ridge #313131;
+}
+.playlistItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  padding-right: 1rem;
+  justify-content: space-between;
+}
+.playlistItem:hover {
+  background-color: #313131;
+}
+.playlistItemInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding-right: 1rem;
+}
+.playlistItemInfo h3 {
+  width: 30rem;
+}
+.playlistLastItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.playlistLastItem:hover {
+  background-color: #313131;
+}
+.playlistItem .playlistItemInfo img,
+.playlistLastItem img {
+  width: 10rem;
+  height: 6rem;
+}
+.playlistItem img {
+  width: 2rem;
+  height: 2rem;
+}
 /*PL 3*/
 /*PL 6*/
 /*PL 4*/
