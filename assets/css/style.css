@@ -43,17 +43,21 @@ body {
 #playlistMenu {
   display: block;
 }
-.playlistInfo {
+#playlistInfo {
   background-color: #31313148;
   border: 0.2rem ridge #313131;
 }
-.playlistInfo h3,
-.playlistInfo h4 {
+#playlistInfo h3,
+#playlistInfo h4 {
   margin-left: 0.8rem;
 }
-.playlistItens {
+#playlistItems {
   background: transparent;
   border: 0.2rem ridge #313131;
+}
+#playlistVideoItems {
+  height: 24rem;
+  overflow-y: auto;
 }
 .playlistItem {
   display: flex;
