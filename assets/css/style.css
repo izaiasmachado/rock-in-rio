@@ -11,6 +11,18 @@ rosa #ef027c
   font-size: 62.5%; /* 1rem = 10px */
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+::-webkit-scrollbar {
+  width: 0.6rem;
+}
+::-webkit-scrollbar-track {
+  background: #000;
+}
+::-webkit-scrollbar-thumb {
+  background: #313131;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ef027c;
+}
 body {
   background-color: black;
   color: white;
