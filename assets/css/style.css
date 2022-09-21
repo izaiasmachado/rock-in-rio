@@ -93,12 +93,6 @@ body {
 .playlistItemInfo h3 {
   width: 30rem;
 }
-.playlistLastItem {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
 .playlistLastItem:hover {
   background-color: #313131;
 }
@@ -110,7 +104,24 @@ body {
   width: 2rem;
   height: 2rem;
 }
+.playlistItemConfig {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+}
+.playlistItemConfig img {
+  padding: 0.1rem;
+}
+.playlistItemConfig img:hover {
+  background-color: #ef027c;
+  border-radius: 50%;
+  padding: 0.1rem;
+}
 .playlistLastItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   border-top: 0.2rem ridge #313131;
 }
 .playlistLastItem img {
