@@ -1,4 +1,4 @@
-# Rock In Rio - Lading Page
+# Rock In Rio - Landing Page
 
 ## Sobre o Projeto
 Essa lading page reune videos, fotos e informações relevantes sobre o Rock In Rio 2022.
