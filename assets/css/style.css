@@ -29,7 +29,18 @@ body {
 }
 /*HEADER*/
 /*Lançamentos*/
+div#lancamentos {
+    background-color: red;
+    color: #fff;
+    height: 100%;
+}
+
 /*Em destaques*/
+div#destaque {
+    background-color: blue;
+    color: #fff;
+}
+
 /*Últimas Avaliações*/
 /*Lista de favoritos por usuário*/
 #favorites-list {
