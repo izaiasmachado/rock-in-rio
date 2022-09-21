@@ -109,8 +109,11 @@ body {
 }
 .playlistItemConfig img {
   padding: 0.1rem;
+  filter: invert(100%);
 }
 .playlistItemConfig img:hover {
+  filter: none;
+  transition: background-color 0.6s ease;;	
   background-color: #ef027c;
   border-radius: 50%;
 }
