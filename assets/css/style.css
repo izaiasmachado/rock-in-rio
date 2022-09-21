@@ -9,6 +9,7 @@ rosa #ef027c
 */
 :root {
   font-size: 62.5%; /* 1rem = 10px */
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 body {
   background-color: black;
@@ -43,8 +44,8 @@ body {
   display: block;
 }
 .playlistInfo {
-  background-color: #313131;
-  border: 0.1rem ridge #313131;
+  background-color: #31313148;
+  border: 0.2rem ridge #313131;
 }
 .playlistInfo h3,
 .playlistInfo h4 {
@@ -52,7 +53,7 @@ body {
 }
 .playlistItens {
   background: transparent;
-  border: 0.1rem ridge #313131;
+  border: 0.2rem ridge #313131;
 }
 .playlistItem {
   display: flex;
@@ -85,14 +86,44 @@ body {
 .playlistLastItem:hover {
   background-color: #313131;
 }
-.playlistItem .playlistItemInfo img,
-.playlistLastItem img {
+.playlistItem .playlistItemInfo img {
   width: 10rem;
   height: 6rem;
 }
 .playlistItem img {
   width: 2rem;
   height: 2rem;
+}
+.playlistLastItem {
+  border-top: 0.2rem ridge #313131;
+}
+.playlistLastItem img {
+  width: 7rem;
+  height: 3rem;
+  padding-block: 1.5rem;
+}
+@media (max-width: 479px) {
+  #playlist {
+    flex-direction: column;
+  }
+  #playlist iframe,
+  #playlistMenu {
+    width: 100%;
+  }
+  .playlistItemInfo h3 {
+    width: 11rem;
+  }
+}
+@media (min-width: 480px) and (max-width: 1279px) {
+  #playlist {
+    flex-direction: column;
+  }
+  #playlist iframe,
+  #playlistMenu {
+    width: 100%;
+  }
+}
+@media (min-width: 1280px) {
 }
 /*PL 3*/
 /*PL 6*/
