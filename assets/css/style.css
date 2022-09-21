@@ -93,7 +93,7 @@ body {
 .playlistItemInfo h3 {
   width: 30rem;
 }
-.playlistLastItem:hover {
+#playlistLastItem:hover {
   background-color: #313131;
 }
 .playlistItem .playlistItemInfo img {
@@ -117,14 +117,14 @@ body {
   border-radius: 50%;
   padding: 0.1rem;
 }
-.playlistLastItem {
+#playlistLastItem {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   border-top: 0.2rem ridge #313131;
 }
-.playlistLastItem img {
+#playlistLastItem img {
   width: 7rem;
   height: 3rem;
   padding-block: 1.5rem;
