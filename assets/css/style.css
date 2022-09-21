@@ -28,16 +28,19 @@ body {
   margin-left: 2rem;
   margin-bottom: 3rem;
 }
-.playlist {
+#playlist {
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: row;
   gap: 2rem;
 }
-.playlist iframe {
+#playlist iframe {
   width: 49rem;
   height: 36.66rem;
+}
+#playlistMenu {
+  display: block;
 }
 .playlistInfo {
   background-color: #313131;
