@@ -27,26 +27,41 @@ body {
   background-color: black;
   color: white;
 }
-/*HEADER*/
-/*Lançamentos*/
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10rem;
+}
+button.removerButtonStyle {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+/*========HEADER========*/
+/*========Lançamentos========*/
 div#lancamentos {
-    background-color: red;
-    color: #fff;
-    height: 100%;
+  background-color: red;
+  color: #fff;
+  height: 100%;
 }
 
-/*Em destaques*/
+/*========Em destaques========*/
 div#destaque {
-    background-color: blue;
-    color: #fff;
+  background-color: blue;
+  color: #fff;
 }
 
-/*Últimas Avaliações*/
-/*Lista de favoritos por usuário*/
-#favorites-list {
+/*========Últimas Avaliações========*/
+/*========Lista de favoritos por usuário========*/
+#favoritesList {
   display: block;
 }
-#favorites-list h2 {
+#favoritesList h2 {
   color: #ef027c;
   font-size: 3rem;
   margin-left: 2rem;
@@ -90,7 +105,8 @@ div#destaque {
   padding-right: 1rem;
   justify-content: space-between;
 }
-.playlistItem:hover, #playlistLastItem:hover {
+.playlistItem:hover,
+#playlistLastItem:hover {
   background-color: #313131;
   transition: background-color 0.4s ease;
 }
@@ -124,7 +140,7 @@ div#destaque {
 }
 .playlistItemConfig img:hover {
   filter: none;
-  transition: background-color 0.6s ease;;	
+  transition: background-color 0.6s ease;
   background-color: #ef027c;
   border-radius: 50%;
 }
@@ -140,7 +156,43 @@ div#destaque {
   height: 3rem;
   padding-block: 1.5rem;
 }
+/*========Comunidades de vídeos temáticos========*/
+#themedVideoCommunity {
+  display: block;
+}
+#communityWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+#themedVideos {
+}
+#community-about {
+}
+#community-editorial {
+}
+.editorialWrapperItem img {
+  filter: invert(100%);
+}
+#social-medias img {
+  width: 3rem;
+  height: 3rem;
+  filter: invert(100%);
+}
+#social-medias img:hover {
+  filter: invert(15%) sepia(100%) saturate(5113%) hue-rotate(320deg)
+    brightness(92%) contrast(105%);
+  transition: filter 0.4s ease;
+}
+/*========PL 6========*/
+/*========PL 4========*/
+/*========PL 5========*/
+/*========PL 7========*/
+/*========FOOTER========*/
+/*========MEDIA QUERIES========*/
 @media (max-width: 479px) {
+  /*========Lista de favoritos por usuário========*/
   #playlist {
     flex-direction: column;
   }
@@ -153,6 +205,7 @@ div#destaque {
   }
 }
 @media (min-width: 480px) and (max-width: 1279px) {
+  /*========Lista de favoritos por usuário========*/
   #playlist {
     flex-direction: column;
   }
@@ -163,9 +216,3 @@ div#destaque {
 }
 @media (min-width: 1280px) {
 }
-/*PL 3*/
-/*PL 6*/
-/*PL 4*/
-/*PL 5*/
-/*PL 7*/
-/*FOOTER*/
