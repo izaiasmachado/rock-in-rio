@@ -49,13 +49,11 @@ div#lancamentos {
   color: #fff;
   height: 100%;
 }
-
 /*========Em destaques========*/
 div#destaque {
   background-color: blue;
   color: #fff;
 }
-
 /*========Últimas Avaliações========*/
 /*========Lista de favoritos por usuário========*/
 #favoritesList {
@@ -168,22 +166,37 @@ div#destaque {
 }
 #themedVideos {
 }
-#community-about {
+#aboutTeam {
+  width: 25%;
 }
-#community-editorial {
+#communityAbout {
+}
+#communityEditorial {
+}
+.editorialWrapperItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .editorialWrapperItem img {
   filter: invert(100%);
 }
-#social-medias img {
+#socialMediasLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: flex-start;
+}
+#socialMediasLinks img {
   width: 3rem;
   height: 3rem;
   filter: invert(100%);
 }
-#social-medias img:hover {
+#socialMediasLinks img:hover {
   filter: invert(15%) sepia(100%) saturate(5113%) hue-rotate(320deg)
     brightness(92%) contrast(105%);
-  transition: filter 0.4s ease;
+  transition: filter 0.45s ease;
 }
 /*========PL 6========*/
 /*========PL 4========*/
