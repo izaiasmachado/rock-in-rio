@@ -42,6 +42,12 @@ button.removerButtonStyle {
   cursor: pointer;
   outline: inherit;
 }
+h2.sectionTitle {
+  color: #ef027c;
+  font-size: 3rem;
+  margin-left: 2rem;
+  margin-bottom: 3rem;
+}
 /*========HEADER========*/
 /*========Lançamentos========*/
 div#lancamentos {
@@ -68,9 +74,8 @@ div#destaque {
 #playlist {
   display: flex;
   align-items: flex-start;
-  justify-content: center;
   flex-direction: row;
-  gap: 2rem;
+  justify-content: space-evenly;
 }
 #playlist iframe {
   width: 49rem;
@@ -161,17 +166,52 @@ div#destaque {
 #communityWrapper {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 5rem;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 #themedVideos {
+  min-width: 35%;
 }
 #aboutTeam {
-  width: 25%;
+  max-width: 40%;
 }
-#communityAbout {
+#communityAbout h2 {
+  color: #ef027c;
+  font-size: 3rem;
+  font-weight: 700;
+}
+#communityAbout p {
+  font-size: 1.3rem;
+  font-weight: 300;
 }
 #communityEditorial {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#communityEditorial h2 {
+  color: #ef027c;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+#communityEditorial h3 {
+  color: #ef027c;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+#communityEditorial h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+#communityEditorial p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+#communityEditorial span {
+  color: #ff5629;
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 .editorialWrapperItem {
   display: flex;
@@ -216,8 +256,19 @@ div#destaque {
   .playlistItemInfo h3 {
     width: 11rem;
   }
+  /*========Comunidades de vídeos temáticos========*/
+  #communityWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #aboutTeam {
+    max-width: 100%;
+  }
 }
-@media (min-width: 480px) and (max-width: 1279px) {
+@media (min-width: 480px) and (max-width: 1024px) {
   /*========Lista de favoritos por usuário========*/
   #playlist {
     flex-direction: column;
@@ -225,6 +276,17 @@ div#destaque {
   #playlist iframe,
   #playlistMenu {
     width: 100%;
+  }
+  /*========Comunidades de vídeos temáticos========*/
+  #communityWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #aboutTeam {
+    max-width: 90%;
   }
 }
 @media (min-width: 1280px) {
