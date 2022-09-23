@@ -28,6 +28,73 @@ body {
   color: white;
 }
 /*HEADER*/
+#nav-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 5%;
+  align-items: center;
+  background: #313131;
+
+}
+
+#nav-header .logo {
+  color: #FFF;
+}
+
+#nav-hader ul {
+  list-style: none;
+}
+
+#nav-header ul li {
+  display: inline-block;
+}
+
+#nav-header ul li a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #FFF;
+
+  padding: 8px 30px;
+  border-radius: 7px;
+
+  transition: all .3s ease;
+}
+
+#nav-header ul li a:hover,
+#nav-header ul li a.active {
+  color: #FFF;
+  background: #ef027c;
+}
+
+#nav-header #icon {
+  background-color: #ef027c;
+  padding: 5px 7px 3px 7px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+#nav-header #icon svg {
+  color: #FFF;
+  height: 28px;
+  transition: all .3s ease;
+}
+
+#nav-header #icon:hover {
+  background: #FFF;
+}
+
+#nav-header #icon:hover svg {
+  color: #0075FF;
+}
+
+#checkbox,
+#icon {
+  display: none;
+}
+
+
+
 /*Lançamentos*/
 div#lancamentos {
     background-color: red;
@@ -162,6 +229,52 @@ div#destaque {
   }
 }
 @media (min-width: 1280px) {
+}
+
+/* Media query do header */
+@media screen and (max-width: 1024px) {
+  .logo {
+    display: none;
+  }
+
+  nav {
+      border-bottom: 1px solid #455468;
+  }
+
+  ul {
+      position: absolute;
+
+      width: 100%;
+      height: 100vh;
+
+      background-color: #18283B;
+      left: 0;
+      top: 0;
+
+      text-align: center;
+
+      display: none;
+      margin-top: 71px;
+  }
+
+  ul li {
+      display: block;
+      width: 80%;
+      padding: 10px 10px; 
+  }
+
+  ul li a {
+      display: block;
+      padding: 0;
+  }
+
+  #icon {
+      display: block;
+  }
+
+  #checkbox:checked~ul {
+      display: block;
+  }
 }
 /*PL 3*/
 /*PL 6*/
