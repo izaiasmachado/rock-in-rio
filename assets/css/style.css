@@ -27,6 +27,15 @@ body {
   background-color: black;
   color: white;
 }
+button.removerButtonStyle {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
 /*HEADER*/
 /*Lançamentos*/
 div#lancamentos {
@@ -165,7 +174,59 @@ div#destaque {
 @media (min-width: 1280px) {
 }
 /*PL 3*/
-/*PL 6*/
+/*=====PUBLICIDADE=====*/
+#publicity {
+  width: 100%;
+  height: 30rem;
+  background-color: #ff5629;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#publicityTicket img {
+  height: 28rem;
+}
+#publicityInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#publicityInfo h2 {
+  font-size: 6rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background: black;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  line-height: 130%;
+  text-decoration-line: underline;
+  padding-left: 1rem;
+}
+button.publicityBuy {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+  background: #fff;
+  color: #000;
+  border-radius: 1rem;
+  padding-inline: 1rem;
+  font-size: 3rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+#publicityInfo button:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 2px;
+  filter: invert(15%) sepia(100%) saturate(5113%) hue-rotate(320deg)
+    brightness(92%) contrast(105%);
+  transition: filter 0.4s ease;
+}
+#publicityInfo img {
+  height: 8rem;
+  filter: invert(0%) sepia(36%) saturate(4843%) hue-rotate(122deg)
+    brightness(87%) contrast(96%);
+}
+
 /*PL 4*/
 /*PL 5*/
 /*PL 7*/
