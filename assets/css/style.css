@@ -8,37 +8,44 @@ branco #ffffff
 rosa #ef027c
 */
 :root {
-  font-size: 62.5%; /* 1rem = 10px */
+  font-size: 62.5%;
+  /* 1rem = 10px */
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+
 ::-webkit-scrollbar {
   width: 0.6rem;
 }
+
 ::-webkit-scrollbar-track {
   background: #000;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #313131;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #ef027c;
 }
+
 body {
   background-color: black;
   color: white;
 }
+
 /*HEADER*/
 /*Lançamentos*/
 div#lancamentos {
-    background-color: red;
-    color: #fff;
-    height: 100%;
+  background-color: red;
+  color: #fff;
+  height: 100%;
 }
 
 /*Em destaques*/
 div#destaque {
-    background-color: blue;
-    color: #fff;
+  background-color: blue;
+  color: #fff;
 }
 
 /*Últimas Avaliações*/
@@ -46,12 +53,14 @@ div#destaque {
 #favorites-list {
   display: block;
 }
+
 #favorites-list h2 {
   color: #ef027c;
   font-size: 3rem;
   margin-left: 2rem;
   margin-bottom: 3rem;
 }
+
 #playlist {
   display: flex;
   align-items: flex-start;
@@ -59,29 +68,36 @@ div#destaque {
   flex-direction: row;
   gap: 2rem;
 }
+
 #playlist iframe {
   width: 49rem;
   height: 36.66rem;
 }
+
 #playlistMenu {
   display: block;
 }
+
 #playlistInfo {
   background-color: #31313148;
   border: 0.2rem ridge #313131;
 }
+
 #playlistInfo h3,
 #playlistInfo h4 {
   margin-left: 0.8rem;
 }
+
 #playlistItems {
   background: transparent;
   border: 0.2rem ridge #313131;
 }
+
 #playlistVideoItems {
   height: 24rem;
   overflow-y: auto;
 }
+
 .playlistItem {
   display: flex;
   flex-direction: row;
@@ -90,10 +106,13 @@ div#destaque {
   padding-right: 1rem;
   justify-content: space-between;
 }
-.playlistItem:hover, #playlistLastItem:hover {
+
+.playlistItem:hover,
+#playlistLastItem:hover {
   background-color: #313131;
   transition: background-color 0.4s ease;
 }
+
 .playlistItemInfo {
   display: flex;
   flex-direction: row;
@@ -102,32 +121,40 @@ div#destaque {
   gap: 1rem;
   padding-right: 1rem;
 }
+
 .playlistItemInfo h3 {
   width: 30rem;
 }
+
 .playlistItem .playlistItemInfo img {
   width: 10rem;
   height: 6rem;
 }
+
 .playlistItem img {
   width: 2rem;
   height: 2rem;
 }
+
 .playlistItemConfig {
   display: flex;
   gap: 1rem;
   flex-direction: row;
 }
+
 .playlistItemConfig img {
   padding: 0.1rem;
   filter: invert(100%);
 }
+
 .playlistItemConfig img:hover {
   filter: none;
-  transition: background-color 0.6s ease;;	
+  transition: background-color 0.6s ease;
+  ;
   background-color: #ef027c;
   border-radius: 50%;
 }
+
 #playlistLastItem {
   display: flex;
   flex-direction: row;
@@ -135,37 +162,172 @@ div#destaque {
   justify-content: center;
   border-top: 0.2rem ridge #313131;
 }
+
 #playlistLastItem img {
   width: 7rem;
   height: 3rem;
   padding-block: 1.5rem;
 }
+
 @media (max-width: 479px) {
   #playlist {
     flex-direction: column;
   }
+
   #playlist iframe,
   #playlistMenu {
     width: 100%;
   }
+
   .playlistItemInfo h3 {
     width: 11rem;
   }
 }
+
 @media (min-width: 480px) and (max-width: 1279px) {
   #playlist {
     flex-direction: column;
   }
+
   #playlist iframe,
   #playlistMenu {
     width: 100%;
   }
 }
-@media (min-width: 1280px) {
+
+#concertsUpdatesContainer {
+  display: block;
 }
-/*PL 3*/
-/*PL 6*/
-/*PL 4*/
+
+#concertsUpdatesContainer h2 {
+  color: #ef027c;
+  font-size: 3rem;
+  margin-left: 2rem;
+  margin-bottom: 3rem;
+}
+
+#concertsUpdates {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+}
+
+#concertsUpdates p, #concertsUpdates label {
+  font-size: 1.4rem;
+}
+
+#concertsUpdatesFormBody form div label {
+  padding: 0 0 0 3px;
+  margin: 5px 10px 0px 0;
+}
+
+#concertsUpdatesList {
+  display: flex;
+  flex-direction: column;
+  /* gap: 1rem; */
+  justify-content: start;
+}
+
+/* set max height on phone to 60% and max width on pc to 60 and width and height to 100 vice versa%*/
+.concertUpdateContainer {
+  padding: 5px;
+  border-bottom: #f2f2f2 solid 0.1rem;
+}
+
+.concertUpdateContainer:last-child {
+  border: 0;
+}
+
+.concertUpdate {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.aboutUpdate {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  /* gap: 0.2rem; */
+  /* padding: 20px; */
+}
+
+.updateTitle {
+  display: flex;
+  font-size: 1.4rem;
+  /* height */
+  align-content: center;
+}
+
+.updateTitle h3 {
+  margin: 0;
+}
+
+.updateTags {
+  display: flex;
+  gap: 3px;
+}
+
+.concertUpdate:first-child {
+  background-size: cover;
+  background-position: center;
+}
+
+.coverUpdate {
+  margin: 0 2%;
+  /* max-width: 30%; */
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coverUpdate img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 1279px) {
+  #concertsUpdates {
+    flex-direction: row;
+  }
+}
+
+#concertsUpdatesFormBody form div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 5px 10px;
+}
+
+#concertsUpdatesForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 1rem;
+}
+
+#concertsUpdatesForm .formTitle h3 {
+  margin: 0;
+  font-size: 14pt;
+}
+
+#concertsUpdatesFormBody form div.inputCover {
+  background-color: none;
+}
+
+#concertsUpdatesFormBody input:not(#inputCover), #concertsUpdatesFormBody textarea {
+  padding: 10px;
+}
+
+#concertsUpdatesFormBody textarea {
+  height: 50px;
+}
+
 /*PL 5*/
 /*PL 7*/
 /*FOOTER*/
