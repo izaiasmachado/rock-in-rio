@@ -240,14 +240,13 @@ div#destaque {
 .concertUpdate {
   margin: 1rem 0;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: left;
 }
 
 .coverUpdate {
   margin: 0 2%;
-  max-height: 300px;
   height: auto;
   width: 100%;
   display: flex;
@@ -261,23 +260,30 @@ div#destaque {
   max-height: 100%;
 }
 
-@media (min-width: 768px) {
-  .concertUpdate {
-    flex-direction: row-reverse;
-  }
-
-  .coverUpdate {
-    width: 30%;
-    max-width: 300px;
-    height: auto;
-    margin-top: 0;
-  }
-}
-
 .aboutUpdate {
   display: flex;
   flex-direction: column;
   justify-content: start;
+}
+
+@media (min-width: 768px) {
+  .concertUpdate {
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+  }
+
+  .coverUpdate {
+    /* width: 30%; */
+    width: 300px;
+    /* max-width: 500px; */
+    /* height: auto; */
+    /* width: 400px; */
+    margin-top: 0;
+  }
+
+  .aboutUpdate {
+    width: 70%;
+  }
 }
 
 .updateTitle {
@@ -289,6 +295,7 @@ div#destaque {
 
 .updateTitle h3 {
   margin: 0;
+  font-size: 1.8rem;
 }
 
 .updateTags {
