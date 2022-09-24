@@ -73,12 +73,6 @@ div#destaque {
 #favoritesList {
   display: block;
 }
-#favoritesList h2 {
-  color: #ef027c;
-  font-size: 3rem;
-  margin-left: 2rem;
-  margin-bottom: 3rem;
-}
 
 #playlist {
   display: flex;
@@ -321,13 +315,6 @@ div#destaque {
 
 #concertsUpdatesContainer {
   display: block;
-}
-
-#concertsUpdatesContainer h2 {
-  color: #ef027c;
-  font-size: 3rem;
-  margin-left: 2rem;
-  margin-bottom: 3rem;
 }
 
 #concertsUpdates {
