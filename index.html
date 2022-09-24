@@ -1,107 +1,328 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock In Rio</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
-  <body>
-    <header><h1>header</h1></header>
-    <main>
-      <section id="favorites-list">
-        <h2>Lista de favoritos</h2>
-        <div id="playlist">
-          <iframe
-            src="https://www.youtube.com/embed/U6Gi0HhoW4Y?start=7"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-          <div id="playlistMenu">
-            <div id="playlistInfo">
-              <h3>Minha Lista de favoritos</h3>
-              <h4>Rock in Rio 2022</h4>
-            </div>
-            <div id="playlistItems">
-              <div id="playlistVideoItems">
-                <div class="playlistItem">
-                  <div class="playlistItemInfo">
-                    <img src="./assets/images/Playlist1.jfif" alt="" />
-                    <h3>ColdPlay - ROCK IN RIO - 10/09/2022 - Completo</h3>
-                  </div>
-                  <div class="playlistItemConfig">
-                    <img src="./assets/images/trash-svgrepo-com.svg" alt="" />
-                    <img src="./assets/images/options-svgrepo-com.svg" alt="" />
-                  </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock In Rio</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>header</h1>
+  </header>
+  <main>
+    <section id="favoritesList">
+      <h2 class="sectionTitle">Lista de favoritos</h2>
+      <div id="playlist">
+        <iframe src="https://www.youtube.com/embed/U6Gi0HhoW4Y?start=7" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        <div id="playlistMenu">
+          <div id="playlistInfo">
+            <h3>Minha Lista de favoritos</h3>
+            <h4>Rock in Rio 2022</h4>
+          </div>
+          <div id="playlistItems">
+            <div id="playlistVideoItems">
+              <div class="playlistItem">
+                <div class="playlistItemInfo">
+                  <img src="./assets/images/Playlist1.jfif" alt="" />
+                  <h3>ColdPlay - ROCK IN RIO - 10/09/2022 - Completo</h3>
                 </div>
-                <div class="playlistItem">
-                  <div class="playlistItemInfo">
-                    <img src="./assets/images/Playlist2.webp" alt="" />
-                    <h3>
-                      Plateia do Rock in Rio faz Chris Martin cantar novamente
-                      "Viva la vida"
-                    </h3>
-                  </div>
-                  <div class="playlistItemConfig">
-                    <img src="./assets/images/trash-svgrepo-com.svg" alt="" />
-                    <img src="./assets/images/options-svgrepo-com.svg" alt="" />
-                  </div>
-                </div>
-                <div class="playlistItem">
-                  <div class="playlistItemInfo">
-                    <img src="./assets/images/Playlist3.jpg" alt="" />
-                    <h3>
-                      Todos prontos para o maior e melhor Rock in Rio de todos
-                      os tempos?
-                    </h3>
-                  </div>
-                  <div class="playlistItemConfig">
-                    <img src="./assets/images/trash-svgrepo-com.svg" alt="" />
-                    <img src="./assets/images/options-svgrepo-com.svg" alt="" />
-                  </div>
-                </div>
-                <div class="playlistItem">
-                  <div class="playlistItemInfo">
-                    <img src="./assets/images/Playlist4.jpg" alt="" />
-                    <h3>Trailer Noites Amazônicas</h3>
-                  </div>
-                  <div class="playlistItemConfig">
-                    <img src="./assets/images/trash-svgrepo-com.svg" alt="" />
-                    <img src="./assets/images/options-svgrepo-com.svg" alt="" />
-                  </div>
-                </div>
-                <div class="playlistItem">
-                  <div class="playlistItemInfo">
-                    <img src="./assets/images/Playlist5.webp" alt="" />
-                    <h3>
-                      GREEN DAY - MELHORES MOMENTOS - ROCK IN RIO - 09/09/2022
-                    </h3>
-                  </div>
-                  <div class="playlistItemConfig">
-                    <img src="./assets/images/trash-svgrepo-com.svg" alt="" />
-                    <img src="./assets/images/options-svgrepo-com.svg" alt="" />
-                  </div>
-                </div>
-                <div class="playlistItem">
-                  <div class="playlistItemInfo">
-                    <img src="./assets/images/Playlist6.jpg" alt="" />
-                    <h3>
-                      Coldplay - Adventure Of A Lifetime (Live at Rock in Rio)
-                    </h3>
-                  </div>
-                  <div class="playlistItemConfig">
-                    <img src="./assets/images/trash-svgrepo-com.svg" alt="" />
-                    <img src="./assets/images/options-svgrepo-com.svg" alt="" />
-                  </div>
+                <div class="playlistItemConfig">
+                  <img src="./assets/images/trash-svgrepo-com.svg" alt="" />
+                  <img src="./assets/images/options-svgrepo-com.svg" alt="" />
                 </div>
               </div>
-              <div id="playlistLastItem">
-                <img src="./assets/images/plus-60.svg" alt="" />
+              <div class="playlistItem">
+                <div class="playlistItemInfo">
+                  <img src="./assets/images/Playlist2.webp" alt="" />
+                  <h3>
+                    Plateia do Rock in Rio faz Chris Martin cantar novamente
+                    "Viva la vida"
+                  </h3>
+                </div>
+                <div class="playlistItemConfig">
+                  <img src="./assets/images/trash-svgrepo-com.svg" alt="" />
+                  <img src="./assets/images/options-svgrepo-com.svg" alt="" />
+                </div>
+              </div>
+              <div class="playlistItem">
+                <div class="playlistItemInfo">
+                  <img src="./assets/images/Playlist3.jpg" alt="" />
+                  <h3>
+                    Todos prontos para o maior e melhor Rock in Rio de todos
+                    os tempos?
+                  </h3>
+                </div>
+                <div class="playlistItemConfig">
+                  <img src="./assets/images/trash-svgrepo-com.svg" alt="" />
+                  <img src="./assets/images/options-svgrepo-com.svg" alt="" />
+                </div>
+              </div>
+              <div class="playlistItem">
+                <div class="playlistItemInfo">
+                  <img src="./assets/images/Playlist4.jpg" alt="" />
+                  <h3>Trailer Noites Amazônicas</h3>
+                </div>
+                <div class="playlistItemConfig">
+                  <img src="./assets/images/trash-svgrepo-com.svg" alt="" />
+                  <img src="./assets/images/options-svgrepo-com.svg" alt="" />
+                </div>
+              </div>
+              <div class="playlistItem">
+                <div class="playlistItemInfo">
+                  <img src="./assets/images/Playlist5.webp" alt="" />
+                  <h3>
+                    GREEN DAY - MELHORES MOMENTOS - ROCK IN RIO - 09/09/2022
+                  </h3>
+                </div>
+                <div class="playlistItemConfig">
+                  <img src="./assets/images/trash-svgrepo-com.svg" alt="" />
+                  <img src="./assets/images/options-svgrepo-com.svg" alt="" />
+                </div>
+              </div>
+              <div class="playlistItem">
+                <div class="playlistItemInfo">
+                  <img src="./assets/images/Playlist6.jpg" alt="" />
+                  <h3>
+                    Coldplay - Adventure Of A Lifetime (Live at Rock in Rio)
+                  </h3>
+                </div>
+                <div class="playlistItemConfig">
+                  <img src="./assets/images/trash-svgrepo-com.svg" alt="" />
+                  <img src="./assets/images/options-svgrepo-com.svg" alt="" />
+                </div>
               </div>
             </div>
+            <div id="playlistLastItem">
+              <img src="./assets/images/plus-60.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="concertsUpdatesContainer">
+      <h2 class="sectionTitle">Novidades</h2>
+      <div id="concertsUpdates">
+        <div id="concertsUpdatesList">
+          <article class="concertUpdateContainer">
+            <div class="concertUpdate">
+              <div class="aboutUpdate">
+                <div class="updateTitle">
+                  <h3>Chris Martin se Emociona Junto com Fãs</h3>
+                </div>
+                <div class="updateDescription">
+                  <p>O Coldplay, um dos shows mais esperados do penúltimo dia do Rock in Rio, levou muita emoção para a
+                    plateia que mesmo embaixo de chuva cantou os principais hits da banda inglesa.
+                    O vocalista Chris Martin deu show de carisma e simpatia. Ele arriscou palavras em português e chamou
+                    a "galera".
+                    Chris desceu para a plateia e fãs enlouqueceram, a receptividade do público fez o cantor chorar.
+                  </p>
+                </div>
+                <div class="updateTags">
+                  <div class="updateTag">Coldplay</div>
+                  <div class="updateTag">Plateia</div>
+                  <div class="updateTag">Show</div>
+                  <div class="updateTag">Chris Martin</div>
+                  <div class="updateTag">Rock Alternativo</div>
+                </div>
+              </div>
+              <div class="coverUpdate">
+                <img src="assets/images/capa-noticia-chris-martin.webp" />
+              </div>
+            </div>
+          </article>
+          <article class="concertUpdateContainer">
+            <div class="concertUpdate">
+              <div class="aboutUpdate">
+                <div class="updateTitle">
+                  <h3>Show Histórico do Green Day tem até Pedido de Casamento no Palco</h3>
+                  </h3>
+                </div>
+                <div class="updateDescription">
+                  <p>
+                    A banda Green Day fez um show histórico no Rock in Rio 2022, no último sábado (11). O grupo
+                    apresentou um repertório com os maiores sucessos da carreira com músicas do album "Dookie" e também
+                    "American Idiot", além de músicas do novo álbum
+                    "Father of All…", lançado em fevereiro deste ano.
+                    Durante a música Boulevard of Broken Dreams, um casal foi chamado ao palco e aconteceu um pedido de
+                    casamento na frente de todos.
+                  </p>
+                </div>
+                <div class="updateTags">
+                  <div class="updateTag">Green Day</div>
+                  <div class="updateTag">Dookie</div>
+                  <div class="updateTag">American Idiot</div>
+                  <div class="updateTag">Punk Rock</div>
+                  <div class="updateTag">Plateia</div>
+                  <div class="updateTag">Billie Joe</div>
+                </div>
+              </div>
+              <div class="coverUpdate">
+                <img src="assets/images/capa-noticia-green-day.webp" />
+              </div>
+            </div>
+          </article>
+          <article class="concertUpdateContainer">
+            <div class="concertUpdate">
+              <div class="aboutUpdate">
+                <div class="updateTitle">
+                  <h3>Avril Lavigne</h3>
+                </div>
+                <div class="updateDescription">
+                  <p>
+                    A cantora foi uma das apresentações mais aguardadas do Palco Sunset.
+                    A headliner da noite que arrastou uma multidão de fãs para um show repleto de hits.
+                    O show misturou sucessos como "Sk8ter Boy" e "Complicated" com músicas do novo álbum "LOVE SUX".
+                  </p>
+                </div>
+                <div class="updateTags">
+                  <div class="updateTag">Avril Lavigne</div>
+                  <div class="updateTag">Palco Sunset</div>
+                  <div class="updateTag">LOVE SUX</div>
+                  <div class="updateTag">Punk</div>
+                </div>
+              </div>
+              <div class="coverUpdate">
+                <img src="assets/images/capa-noticia-avril-lavigne.webp" />
+              </div>
+            </div>
+          </article>
+        </div>
+        <div id="concertsUpdatesForm">
+          <div class="formTitle">
+            <h3>Cadastre uma Notícia</h3>
+          </div>
+  
+          <div id="concertsUpdatesFormBody">
+            <form action="/" method="GET">
+              <div class="formField inputAuthorName">
+                <label class="formLabel">Nome do Autor</label>
+                <input class="formTextField" type="name" name="author" required>
+              </div>
+  
+              <div class="formField inputUpdateTitle">
+                <label class="formLabel">Título da Matéria</label>
+                <input class="formTextField" type="text" name="title" required>
+              </div>
+  
+              <div class="formField inputUpdateDescription">
+                <label class="formLabel" for="text">Corpo da Notícia</label>
+                <textarea class="formTextField" name="text" required></textarea>
+              </div>
+  
+              <div class="formField inputTags">
+                <label class="formLabel" for="tags">Tags (seguido por vírgula)</label>
+                <input class="formTextField" type="text" name="tags" required>
+              </div>
+  
+              <div class="formField inputCoverArea button">
+  
+                <label class="formLabel customInputFile">
+                  <input class="inputCover" class="removeStyle" type="file" required />
+                  Upload Capa
+                </label>
+              </div>
+  
+              <div class="formField submitButton button">
+                <input class="removeStyle" type="submit" value="Enviar">
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="themedVideoCommunity">
+        <h2 class="sectionTitle">Comunidades de Vídeos Temáticos</h2>
+        <div id="communityWrapper">
+          <article id="themedVideos">
+            <blockquote class="twitter-tweet" data-theme="dark">
+              <p lang="pt" dir="ltr">
+                quero de novo. como faz? 🥺<br />manda aqui seus vídeos pra
+                gente reviver os dias que a gente passou juntos na Cidade do
+                Rock 👇💙
+                <a
+                  href="https://twitter.com/hashtag/TBT?src=hash&amp;ref_src=twsrc%5Etfw"
+                  >#TBT</a
+                >
+                <a
+                  href="https://twitter.com/hashtag/RockinRio2022?src=hash&amp;ref_src=twsrc%5Etfw"
+                  >#RockinRio2022</a
+                >
+                <a href="https://t.co/OK9BzY67YM">pic.twitter.com/OK9BzY67YM</a>
+              </p>
+              &mdash; Rock in Rio 🎸 (@rockinrio)
+              <a
+                href="https://twitter.com/rockinrio/status/1570515698526617600?ref_src=twsrc%5Etfw"
+                >September 15, 2022</a
+              >
+            </blockquote>
+            <script
+              async
+              src="https://platform.twitter.com/widgets.js"
+              charset="utf-8"
+            ></script>
+          </article>
+          <div id="aboutTeam">
+            <aside id="communityAbout">
+              <h2>Sobre</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+                fuga aperiam aliquam provident! Labore ex vero fugit cum porro
+                nisi iusto expedita aliquam mollitia earum! Deleniti, dicta!
+                Nisi, voluptates qui? Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Ab fuga aperiam aliquam provident! Labore ex
+                vero fugit cum porro nisi iusto expedita aliquam mollitia earum!
+                Deleniti, dicta! Nisi, voluptates qui? Lorem ipsum dolor sit
+                amet, consectetur adipisicing elit. Ab fuga aperiam aliquam
+                provident! Labore ex vero fugit cum porro nisi iusto expedita
+                aliquam mollitia earum! Deleniti, dicta! Nisi, voluptates qui?
+              </p>
+            </aside>
+            <aside id="communityEditorial">
+              <h2>Editorial</h2>
+              <div id="aboutEditorial">
+                <div class="editorialWrapperItem">
+                  <img
+                    src="assets/images/person-svgrepo-com.svg"
+                    alt="pessoa"
+                  />
+                  <h4><span>Redação:</span> Nome do Redator</h4>
+                </div>
+                <div class="editorialWrapperItem">
+                  <img
+                    src="assets/images/person-svgrepo-com.svg"
+                    alt="pessoa"
+                  />
+                  <h4><span>Pesquisa:</span> Nome do Pesquisador</h4>
+                </div>
+                <div class="editorialWrapperItem">
+                  <img
+                    src="assets/images/person-svgrepo-com.svg"
+                    alt="pessoa"
+                  />
+                  <h4><span>Gerente Geral:</span> Nome do Editor Chefe</h4>
+                </div>
+              </div>
+              <div id="socialMedias">
+                <h3>Redes Sociais:</h3>
+                <div id="socialMediasLinks">
+                  <button class="removerButtonStyle">
+                    <img src="assets/images/twitter-svgrepo-com.svg" alt="" />
+                  </button>
+                  <button class="removerButtonStyle">
+                    <img src="assets/images/instagram-svgrepo-com.svg" alt="" />
+                  </button>
+                  <button class="removerButtonStyle">
+                    <img src="assets/images/facebook-svgrepo-com.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+            </aside>
           </div>
         </div>
       </section>
