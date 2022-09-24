@@ -246,7 +246,7 @@ div#destaque {
 }
 
 .coverUpdate {
-  margin: 0 2%;
+  margin: 0;
   height: auto;
   width: 100%;
   display: flex;
@@ -273,11 +273,7 @@ div#destaque {
   }
 
   .coverUpdate {
-    /* width: 30%; */
     width: 300px;
-    /* max-width: 500px; */
-    /* height: auto; */
-    /* width: 400px; */
     margin-top: 0;
   }
 
@@ -289,7 +285,6 @@ div#destaque {
 .updateTitle {
   display: flex;
   font-size: 1.4rem;
-  /* height */
   align-content: center;
 }
 
