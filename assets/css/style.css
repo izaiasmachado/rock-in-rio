@@ -150,7 +150,6 @@ div#destaque {
 .playlistItemConfig img:hover {
   filter: none;
   transition: background-color 0.6s ease;
-  ;
   background-color: #ef027c;
   border-radius: 50%;
 }
@@ -218,19 +217,17 @@ div#destaque {
   font-size: 1.4rem;
 }
 
-#concertsUpdatesFormBody form div label {
+.formLabel {
   padding: 0 0 0 3px;
-  margin: 5px 10px 0px 0;
+  margin: 5px 10px 10px 0;
 }
 
 #concertsUpdatesList {
   display: flex;
   flex-direction: column;
-  /* gap: 1rem; */
   justify-content: start;
 }
 
-/* set max height on phone to 60% and max width on pc to 60 and width and height to 100 vice versa%*/
 .concertUpdateContainer {
   padding: 5px;
   border-bottom: #f2f2f2 solid 0.1rem;
@@ -251,8 +248,6 @@ div#destaque {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  /* gap: 0.2rem; */
-  /* padding: 20px; */
 }
 
 .updateTitle {
@@ -278,7 +273,6 @@ div#destaque {
 
 .coverUpdate {
   margin: 0 2%;
-  /* max-width: 30%; */
   height: 30%;
   display: flex;
   justify-content: center;
@@ -296,19 +290,31 @@ div#destaque {
   }
 }
 
-#concertsUpdatesFormBody form div {
+.formField {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  margin: 5px 10px;
+  align-items: stretch;
+  margin: 1rem 0;
 }
 
 #concertsUpdatesForm {
+  min-width: 20%;
+  padding: 20px;
+  background-color: #313131;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
+  border-radius: 5px;
   gap: 1rem;
+}
+
+.formTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  border-bottom: 1px solid rgb(70, 70, 73);
 }
 
 #concertsUpdatesForm .formTitle h3 {
@@ -316,18 +322,97 @@ div#destaque {
   font-size: 14pt;
 }
 
-#concertsUpdatesFormBody form div.inputCover {
+div.inputCover {
   background-color: none;
 }
 
-#concertsUpdatesFormBody input:not(#inputCover), #concertsUpdatesFormBody textarea {
+.formTextField {
   padding: 10px;
-}
-
-#concertsUpdatesFormBody textarea {
   height: 50px;
+  font-size: 16px;
+  background: rgb(18, 18, 20);
+  border-color: rgb(18, 18, 20);
+  color: rgb(255, 255, 255);
+  padding: 0px 1em;
+  border-radius: 5px;
 }
 
+textarea.formTextField {
+  height: 80px;
+}
+
+input[type="submit"].removeStyle {
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.button {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  line-height: 3rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.button:hover {
+  filter: brightness(0.8);
+  transition: background-color 0.6s ease 0s, border 0.6s ease 0s;
+}
+
+.button * {
+  text-transform: uppercase;
+}
+
+.formField.button {
+  margin: 20px 0;
+}
+
+.formField.button:last-child {
+  margin-bottom: 0;
+}
+
+.submitButton {
+  background-color: #337ab7;
+  border: 2px solid #337ab7;
+}
+
+.submitButton:hover {
+  border: 2px solid #fff;
+}
+
+.inputCoverArea {
+  border: 2px solid #337ab7;
+}
+
+.inputCoverArea:hover {
+  border-color: white;
+  background-color: #337ab7;
+}
+
+.customInputFile {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  /* display: inline-block; */
+  /* display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; */
+  /* gap: 1rem; */
+  /* margin: 1rem 0; */
+}
+
+.customInputFile input {
+  display: none;
+}
 /*PL 5*/
 /*PL 7*/
 /*FOOTER*/

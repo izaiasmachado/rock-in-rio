@@ -176,36 +176,37 @@
             </div>
 
             <div id="concertsUpdatesFormBody">
-              <form>
-                <div class="inputAuthorName">
-                  <label>Nome do Autor</label>
-                  <input type="name">
+              <form action="/" method="GET">
+                <div class="formField inputAuthorName">
+                  <label class="formLabel">Nome do Autor</label>
+                  <input class="formTextField" type="name" name="author" required>
                 </div>
 
-                <div class="inputUpdateTitle">
-                  <label>Título da Matéria</label>
-                  <input type="text">              
+                <div class="formField inputUpdateTitle">
+                  <label class="formLabel">Título da Matéria</label>
+                  <input class="formTextField" type="text" name="title" required>              
                 </div>
   
-                <div class="inputUpdateDescription">
-                  <label for="description">Descrição</label>
-                  <textarea name="description">
-                    
-                  </textarea>
+                <div class="formField inputUpdateDescription">
+                  <label class="formLabel" for="text">Corpo da Notícia</label>
+                  <textarea class="formTextField" name="text" required></textarea>
                 </div>
                 
-                <div class="inputTags">
-                  <label for="tags">Tags (seguido por vírgula)</label>
-                  <input type="text" name="tags">
+                <div class="formField inputTags">
+                  <label class="formLabel" for="tags">Tags (seguido por vírgula)</label>
+                  <input class="formTextField" type="text" name="tags" required>
                 </div>
                 
-                <div class="inputCoverArea">
-                  <label for="cover">Capa</label>
-                  <input type="file" name="cover" id="inputCover">
+                <div class="formField inputCoverArea button">
+
+                  <label class="formLabel customInputFile">
+                    <input class="inputCover" class="removeStyle" type="file" required/>
+                    Upload Capa
+                  </label>
                 </div>
   
-                <div class="submitButton">
-                  <input type="submit">
+                <div class="formField submitButton button">
+                  <input class="removeStyle" type="submit" value="Enviar">
                 </div>
               </form>
             </div>
