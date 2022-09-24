@@ -8,31 +8,39 @@ branco #ffffff
 rosa #ef027c
 */
 :root {
-  font-size: 62.5%; /* 1rem = 10px */
+  font-size: 62.5%;
+  /* 1rem = 10px */
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+
 ::-webkit-scrollbar {
   width: 0.6rem;
 }
+
 ::-webkit-scrollbar-track {
   background: #000;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #313131;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #ef027c;
 }
+
 body {
   background-color: black;
   color: white;
 }
+
 main {
   display: flex;
   flex-direction: column;
   align-items: stretch;
   gap: 10rem;
 }
+
 button.removerButtonStyle {
   background: none;
   color: inherit;
@@ -71,35 +79,43 @@ div#destaque {
   margin-left: 2rem;
   margin-bottom: 3rem;
 }
+
 #playlist {
   display: flex;
   align-items: flex-start;
   flex-direction: row;
   justify-content: space-evenly;
 }
+
 #playlist iframe {
   width: 49rem;
   height: 36.66rem;
 }
+
 #playlistMenu {
   display: block;
 }
+
 #playlistInfo {
   background-color: #31313148;
   border: 0.2rem ridge #313131;
 }
+
 #playlistInfo h3,
 #playlistInfo h4 {
   margin-left: 0.8rem;
 }
+
 #playlistItems {
   background: transparent;
   border: 0.2rem ridge #313131;
 }
+
 #playlistVideoItems {
   height: 24rem;
   overflow-y: auto;
 }
+
 .playlistItem {
   display: flex;
   flex-direction: row;
@@ -108,11 +124,13 @@ div#destaque {
   padding-right: 1rem;
   justify-content: space-between;
 }
+
 .playlistItem:hover,
 #playlistLastItem:hover {
   background-color: #313131;
   transition: background-color 0.4s ease;
 }
+
 .playlistItemInfo {
   display: flex;
   flex-direction: row;
@@ -121,32 +139,39 @@ div#destaque {
   gap: 1rem;
   padding-right: 1rem;
 }
+
 .playlistItemInfo h3 {
   width: 30rem;
 }
+
 .playlistItem .playlistItemInfo img {
   width: 10rem;
   height: 6rem;
 }
+
 .playlistItem img {
   width: 2rem;
   height: 2rem;
 }
+
 .playlistItemConfig {
   display: flex;
   gap: 1rem;
   flex-direction: row;
 }
+
 .playlistItemConfig img {
   padding: 0.1rem;
   filter: invert(100%);
 }
+
 .playlistItemConfig img:hover {
   filter: none;
   transition: background-color 0.6s ease;
   background-color: #ef027c;
   border-radius: 50%;
 }
+
 #playlistLastItem {
   display: flex;
   flex-direction: row;
@@ -154,6 +179,7 @@ div#destaque {
   justify-content: center;
   border-top: 0.2rem ridge #313131;
 }
+
 #playlistLastItem img {
   width: 7rem;
   height: 3rem;
@@ -238,9 +264,9 @@ div#destaque {
     brightness(92%) contrast(105%);
   transition: filter 0.45s ease;
 }
-/*========PL 6========*/
 /*========PL 4========*/
 /*========PL 5========*/
+/*========PL 6========*/
 /*========PL 7========*/
 /*========FOOTER========*/
 /*========MEDIA QUERIES========*/
@@ -249,10 +275,12 @@ div#destaque {
   #playlist {
     flex-direction: column;
   }
+
   #playlist iframe,
   #playlistMenu {
     width: 100%;
   }
+
   .playlistItemInfo h3 {
     width: 11rem;
   }
@@ -273,6 +301,7 @@ div#destaque {
   #playlist {
     flex-direction: column;
   }
+
   #playlist iframe,
   #playlistMenu {
     width: 100%;
@@ -289,5 +318,281 @@ div#destaque {
     max-width: 90%;
   }
 }
-@media (min-width: 1280px) {
+
+#concertsUpdatesContainer {
+  display: block;
 }
+
+#concertsUpdatesContainer h2 {
+  color: #ef027c;
+  font-size: 3rem;
+  margin-left: 2rem;
+  margin-bottom: 3rem;
+}
+
+#concertsUpdates {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+#concertsUpdates p, .formLabel {
+  font-size: 1.4rem;
+}
+
+.formLabel {
+  padding: 0 0 0 3px;
+  font-weight: bold;
+  margin: 5px 10px 10px 3px;
+}
+
+#concertsUpdatesList {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.concertUpdateContainer {
+  padding: 5px;
+  border-bottom: #f2f2f2 solid 0.1rem;
+}
+
+.concertUpdateContainer:last-child {
+  border: 0;
+}
+
+.concertUpdate {
+  margin: 1rem 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: left;
+}
+
+.coverUpdate {
+  margin: 0;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.coverUpdate img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.aboutUpdate {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.updateTitle {
+  display: flex;
+  font-size: 1.4rem;
+  align-content: center;
+}
+
+.updateTitle h3 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.updateTags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.updateTag {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 5px 12px;
+  border-radius: 10px;
+  filter: brightness(0.9);
+  border: #000 solid 0.1rem;
+  cursor: pointer;
+}
+
+.updateTag:hover {
+  filter: brightness(1);
+  border: #fff solid 0.1rem;
+  transition: background-color 0.3s ease 0s, border 0.3s ease 0s;
+}
+
+.updateTag:nth-child(3n + 1) {
+  background-color: #ff5629;
+}
+
+.updateTag:nth-child(3n + 2) {
+  background-color: #cf2e2e;
+}
+
+.updateTag:nth-child(3n) {
+  background-color: #337ab7; 
+}
+
+.concertUpdate:first-child {
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 1279px) {
+  #concertsUpdates {
+    flex-direction: row;
+  }
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin: 1rem 0;
+}
+
+#concertsUpdatesForm {
+  width: 85%;
+  padding: 20px;
+  background-color: #313131;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+  gap: 1rem;
+}
+
+.formTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  border-bottom: 1px solid rgb(70, 70, 73);
+}
+
+#concertsUpdatesForm .formTitle h3 {
+  margin: 0;
+  font-size: 14pt;
+}
+
+div.inputCover {
+  background-color: none;
+}
+
+.formTextField {
+  padding: 10px;
+  height: 50px;
+  font-size: 16px;
+  background: rgb(18, 18, 20);
+  border-color: rgb(18, 18, 20);
+  color: rgb(255, 255, 255);
+  padding: 0px 1em;
+  border-radius: 5px;
+}
+
+textarea.formTextField {
+  height: 80px;
+}
+
+input[type="submit"].removeStyle {
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.button {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  line-height: 3rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.button:hover {
+  filter: brightness(0.8);
+  transition: background-color 0.6s ease 0s, border 0.6s ease 0s;
+}
+
+.button * {
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+}
+
+.formField.button {
+  margin: 20px 0;
+}
+
+.formField.button:last-child {
+  margin-bottom: 0;
+}
+
+.submitButton {
+  background-color: #337ab7;
+  border: 2px solid #337ab7;
+}
+
+.submitButton:hover {
+  border: 2px solid #fff;
+}
+
+.inputCoverArea {
+  border: 2px solid #337ab7;
+}
+
+.inputCoverArea:hover {
+  border-color: white;
+  background-color: #337ab7;
+}
+
+.customInputFile {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.customInputFile input {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .concertUpdate {
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+  }
+
+  .coverUpdate {
+    margin: 0 1.4rem 0 0;
+    width: 300px;
+  }
+
+  .aboutUpdate {
+    width: 70%;
+  }
+
+  #concertsUpdatesForm {
+    min-width: 20%;
+    max-width: 80%;
+  }
+}
+
+/*PL 5*/
+/*PL 7*/
+/*FOOTER*/
