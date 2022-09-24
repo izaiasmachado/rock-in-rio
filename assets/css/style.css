@@ -50,12 +50,6 @@ div#lancamentos {
   height: 100%;
 }
 
-/*Em destaques*/
-div#destaque {
-  background-color: blue;
-  color: #fff;
-} 
-
 main {
   display: flex;
   flex-direction: column;
@@ -78,20 +72,25 @@ h2.sectionTitle {
   margin-left: 2rem;
   margin-bottom: 3rem;
 }
-/*========HEADER========*/
-/*========Lançamentos========*/
+
+/* ======== Header ======== */
+/* ======== Lançamentos ======== */
 div#lancamentos {
   background-color: red;
   color: #fff;
   height: 100%;
 }
-/*========Em destaques========*/
+
+/* ======== Em destaques ======== */
 div#destaque {
   background-color: blue;
   color: #fff;
 }
-/*========Últimas Avaliações========*/
-/*========Lista de favoritos por usuário========*/
+
+/* ======== Últimas Avaliações ======== */
+/* ======== Entrevistas & Making Of ======== */
+/* ======== PL 1: Top Videos do Momento ======== */
+/* ======== PL 2: Lista de favoritos por usuário  ======== */
 #favoritesList {
   display: block;
 }
@@ -201,81 +200,8 @@ div#destaque {
   height: 3rem;
   padding-block: 1.5rem;
 }
-/*PL 3*/
-/*=====PUBLICIDADE=====*/
-#publicity {
-  width: 100%;
-  height: fit-content;
-  background-color: #ff5629;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-#publicityTicket {
-  padding-top: 2rem;
-}
-#publicityTicket img {
-  height: 28rem;
-}
-#publicityInfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: nowrap;
-  align-content: center;
-  padding-bottom: 2rem;
-}
-#publicityInfo h2 {
-  font-size: 6rem;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  background-image: linear-gradient(to right, black, #ef027c);
-  -webkit-background-clip: text;
-  color: transparent;
-  margin: 0;
-}
-#publicityInfo h3 {
-  font-size: 2rem;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  background-image: linear-gradient(to left, black, #ef027c);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-button.publicityBuy {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  gap: 1rem;
-  background: #fff;
-  color: #000;
-  border-radius: 1rem;
-  padding-inline: 1rem;
-  font-size: 3rem;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  background-image: linear-gradient(to right, black, #ef027c);
-  -webkit-background-clip: text;
-  color: transparent;
-}
-#publicityInfo button:hover {
-  box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 2px;
-  filter: invert(15%) sepia(100%) saturate(5113%) hue-rotate(320deg)
-    brightness(92%) contrast(105%);
-  transition: filter 0.4s ease;
-}
-#publicityInfo img {
-  height: 8rem;
-  filter: invert(0%) sepia(36%) saturate(4843%) hue-rotate(122deg)
-    brightness(87%) contrast(96%);
-}
 
-/*PL 4*/
-/*PL 5*/
-/*PL 7*/
-/*FOOTER*/
-/*========Comunidades de vídeos temáticos========*/
+/* ======== PL 3: Comunidade de Videos Temáticos  ======== */
 #themedVideoCommunity {
   display: block;
 }
@@ -355,7 +281,7 @@ button.publicityBuy {
   transition: filter 0.45s ease;
 }
 
-/*========PL 4========*/
+/* ======== PL 4: Notícias sobre Comunidade de Videos Temáticos ======== */
 #concertsUpdatesContainer {
   display: block;
 }
@@ -623,11 +549,79 @@ input[type="submit"].removeStyle {
   }
 }
 
-/*========PL 5========*/
-/*========PL 6========*/
-/*========PL 7========*/
-/*========FOOTER========*/
-/*========MEDIA QUERIES========*/
+/* ======== PL 5: Fórum de Comentários e Discussões Sobre os Vídeos ======== */
+/* ======== PL 6: Publicidade ======== */
+#publicity {
+  width: 100%;
+  height: fit-content;
+  background-color: #ff5629;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+#publicityTicket {
+  padding-top: 2rem;
+}
+#publicityTicket img {
+  height: 28rem;
+}
+#publicityInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  align-content: center;
+  padding-bottom: 2rem;
+}
+#publicityInfo h2 {
+  font-size: 6rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-image: linear-gradient(to right, black, #ef027c);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin: 0;
+}
+#publicityInfo h3 {
+  font-size: 2rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-image: linear-gradient(to left, black, #ef027c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+button.publicityBuy {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+  background: #fff;
+  color: #000;
+  border-radius: 1rem;
+  padding-inline: 1rem;
+  font-size: 3rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-image: linear-gradient(to right, black, #ef027c);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+#publicityInfo button:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 2px;
+  filter: invert(15%) sepia(100%) saturate(5113%) hue-rotate(320deg)
+    brightness(92%) contrast(105%);
+  transition: filter 0.4s ease;
+}
+#publicityInfo img {
+  height: 8rem;
+  filter: invert(0%) sepia(36%) saturate(4843%) hue-rotate(122deg)
+    brightness(87%) contrast(96%);
+}
+
+/* ======== PL 7: Sugestões de Novos Videos Para Assistir ======== */
+/* ======== Footer ======== */
+/* ======== Media Queries ======== */
 @media (max-width: 479px) {
   /*========Lista de favoritos por usuário========*/
   #playlist {
