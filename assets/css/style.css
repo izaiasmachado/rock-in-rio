@@ -213,13 +213,14 @@ div#destaque {
   gap: 2rem;
 }
 
-#concertsUpdates p, #concertsUpdates label {
+#concertsUpdates p, .formLabel {
   font-size: 1.4rem;
 }
 
 .formLabel {
   padding: 0 0 0 3px;
-  margin: 5px 10px 10px 0;
+  font-weight: bold;
+  margin: 5px 10px 10px 3px;
 }
 
 #concertsUpdatesList {
