@@ -241,7 +241,37 @@ div#destaque {
   margin: 1rem 0;
   display: flex;
   flex-direction: row;
-  align-items: stretch;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.coverUpdate {
+  margin: 0 2%;
+  max-height: 300px;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.coverUpdate img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media (min-width: 768px) {
+  .concertUpdate {
+    flex-direction: row-reverse;
+  }
+
+  .coverUpdate {
+    width: 30%;
+    max-width: 300px;
+    height: auto;
+    margin-top: 0;
+  }
 }
 
 .aboutUpdate {
@@ -299,19 +329,6 @@ div#destaque {
 .concertUpdate:first-child {
   background-size: cover;
   background-position: center;
-}
-
-.coverUpdate {
-  margin: 0 2%;
-  height: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.coverUpdate img {
-  max-width: 100%;
-  height: auto;
 }
 
 @media (min-width: 1279px) {
