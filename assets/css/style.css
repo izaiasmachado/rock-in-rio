@@ -258,61 +258,8 @@ div#destaque {
     brightness(92%) contrast(105%);
   transition: filter 0.45s ease;
 }
+
 /*========PL 4========*/
-/*========PL 5========*/
-/*========PL 6========*/
-/*========PL 7========*/
-/*========FOOTER========*/
-/*========MEDIA QUERIES========*/
-@media (max-width: 479px) {
-  /*========Lista de favoritos por usuário========*/
-  #playlist {
-    flex-direction: column;
-  }
-
-  #playlist iframe,
-  #playlistMenu {
-    width: 100%;
-  }
-
-  .playlistItemInfo h3 {
-    width: 11rem;
-  }
-  /*========Comunidades de vídeos temáticos========*/
-  #communityWrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  #aboutTeam {
-    max-width: 100%;
-  }
-}
-@media (min-width: 480px) and (max-width: 1024px) {
-  /*========Lista de favoritos por usuário========*/
-  #playlist {
-    flex-direction: column;
-  }
-
-  #playlist iframe,
-  #playlistMenu {
-    width: 100%;
-  }
-  /*========Comunidades de vídeos temáticos========*/
-  #communityWrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  #aboutTeam {
-    max-width: 90%;
-  }
-}
-
 #concertsUpdatesContainer {
   display: block;
 }
@@ -580,6 +527,56 @@ input[type="submit"].removeStyle {
   }
 }
 
-/*PL 5*/
-/*PL 7*/
-/*FOOTER*/
+/*========PL 5========*/
+/*========PL 6========*/
+/*========PL 7========*/
+/*========FOOTER========*/
+/*========MEDIA QUERIES========*/
+@media (max-width: 479px) {
+  /*========Lista de favoritos por usuário========*/
+  #playlist {
+    flex-direction: column;
+  }
+
+  #playlist iframe,
+  #playlistMenu {
+    width: 100%;
+  }
+
+  .playlistItemInfo h3 {
+    width: 11rem;
+  }
+  /*========Comunidades de vídeos temáticos========*/
+  #communityWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #aboutTeam {
+    max-width: 100%;
+  }
+}
+@media (min-width: 480px) and (max-width: 1024px) {
+  /*========Lista de favoritos por usuário========*/
+  #playlist {
+    flex-direction: column;
+  }
+
+  #playlist iframe,
+  #playlistMenu {
+    width: 100%;
+  }
+  /*========Comunidades de vídeos temáticos========*/
+  #communityWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #aboutTeam {
+    max-width: 90%;
+  }
+}
