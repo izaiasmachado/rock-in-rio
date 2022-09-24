@@ -321,16 +321,16 @@ div#destaque {
   transition: background-color 0.3s ease 0s, border 0.3s ease 0s;
 }
 
-.updateTag:nth-child(1) {
+.updateTag:nth-child(3n + 1) {
   background-color: #ff5629;
 }
 
-.updateTag:nth-child(2) {
-  background-color: #337ab7; 
+.updateTag:nth-child(3n + 2) {
+  background-color: #cf2e2e;
 }
 
-.updateTag:nth-child(3) {
-  background-color: #cf2e2e;
+.updateTag:nth-child(3n) {
+  background-color: #337ab7; 
 }
 
 .concertUpdate:first-child {
