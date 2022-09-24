@@ -271,8 +271,17 @@ div#destaque {
 .updateTag {
   text-transform: uppercase;
   font-weight: bold;
-  padding: 4px;
+  padding: 5px 12px;
   border-radius: 10px;
+  filter: brightness(0.9);
+  border: #000 solid 0.1rem;
+  cursor: pointer;
+}
+
+.updateTag:hover {
+  filter: brightness(1);
+  border: #fff solid 0.1rem;
+  transition: background-color 0.3s ease 0s, border 0.3s ease 0s;
 }
 
 .updateTag:nth-child(1) {
@@ -389,6 +398,8 @@ input[type="submit"].removeStyle {
 }
 
 .button * {
+  width: 100%;
+  height: 100%;
   text-transform: uppercase;
 }
 
@@ -419,7 +430,10 @@ input[type="submit"].removeStyle {
 }
 
 .customInputFile {
-  display: inline;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0;
   padding: 0;
 }
