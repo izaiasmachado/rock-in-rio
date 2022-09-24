@@ -240,6 +240,7 @@ div#destaque {
 
 .concertUpdate {
   margin: 1rem 0;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -274,8 +275,8 @@ div#destaque {
   }
 
   .coverUpdate {
+    margin: 0 1.4rem 0 0;
     width: 300px;
-    margin-top: 0;
   }
 
   .aboutUpdate {
