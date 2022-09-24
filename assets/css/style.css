@@ -263,7 +263,28 @@ div#destaque {
 
 .updateTags {
   display: flex;
-  gap: 3px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.updateTag {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 4px;
+  border-radius: 10px;
+}
+
+.updateTag:nth-child(1) {
+  background-color: #ff5629;
+}
+
+.updateTag:nth-child(2) {
+  background-color: #337ab7; 
+}
+
+.updateTag:nth-child(3) {
+  background-color: #cf2e2e;
 }
 
 .concertUpdate:first-child {
@@ -401,13 +422,6 @@ input[type="submit"].removeStyle {
   display: inline;
   margin: 0;
   padding: 0;
-  /* display: inline-block; */
-  /* display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; */
-  /* gap: 1rem; */
-  /* margin: 1rem 0; */
 }
 
 .customInputFile input {
