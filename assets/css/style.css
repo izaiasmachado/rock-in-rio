@@ -208,8 +208,8 @@ div#destaque {
 #concertsUpdates {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: stretch;
+  justify-content: space-between;
+  align-items: center;
   gap: 2rem;
 }
 
@@ -266,22 +266,6 @@ div#destaque {
   display: flex;
   flex-direction: column;
   justify-content: start;
-}
-
-@media (min-width: 768px) {
-  .concertUpdate {
-    flex-direction: row-reverse;
-    flex-wrap: nowrap;
-  }
-
-  .coverUpdate {
-    margin: 0 1.4rem 0 0;
-    width: 300px;
-  }
-
-  .aboutUpdate {
-    width: 70%;
-  }
 }
 
 .updateTitle {
@@ -349,7 +333,7 @@ div#destaque {
 }
 
 #concertsUpdatesForm {
-  min-width: 25%;
+  width: 85%;
   padding: 20px;
   background-color: #313131;
   display: flex;
@@ -462,6 +446,28 @@ input[type="submit"].removeStyle {
 .customInputFile input {
   display: none;
 }
+
+@media (min-width: 768px) {
+  .concertUpdate {
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+  }
+
+  .coverUpdate {
+    margin: 0 1.4rem 0 0;
+    width: 300px;
+  }
+
+  .aboutUpdate {
+    width: 70%;
+  }
+
+  #concertsUpdatesForm {
+    min-width: 20%;
+    max-width: 80%;
+  }
+}
+
 /*PL 5*/
 /*PL 7*/
 /*FOOTER*/
