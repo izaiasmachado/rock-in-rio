@@ -10,6 +10,10 @@ rosa #ef027c
 :root {
   font-size: 62.5%; /* 1rem = 10px */
   font-family: Georgia, "Times New Roman", Times, serif;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 ::-webkit-scrollbar {
   width: 0.6rem;
@@ -26,7 +30,9 @@ rosa #ef027c
 body {
   background-color: black;
   color: white;
+}
 
+main {
   width: 90%;
   margin: auto;
 }
@@ -43,6 +49,10 @@ body {
 #nav-header .logo {
   color: #FFF;
 }
+
+#logo-simples {
+  display: none;
+} 
 
 #nav-hader ul {
   list-style: none;
@@ -95,7 +105,49 @@ body {
 #icon {
   display: none;
 }
+/* FIM DA ESTILIZAÇÃO DO HEADER*/
 
+/* ÚLTIMO SHOW */
+#ultimo-show h2 {
+  color: #ef027c;
+  font-size: 3rem;
+  margin-left: 2rem;
+  margin-bottom: 3rem;
+
+  text-align: center;
+}
+
+
+#ultimo-show #infos-ultimo-show {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#video-ultimo-show iframe {
+  width: 49rem;
+  height: 36.66rem;
+}
+
+#ultimo-show #infos-ultimo-show #texto-ultimo-show h3 {
+  color: #ef027c;
+  font-size: 2.75rem;
+  margin-left: 2rem;
+  margin-bottom: 3rem;
+
+  text-align: left;
+}
+
+#ultimo-show #infos-ultimo-show #texto-ultimo-show article p {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-left: 2rem;
+  margin-bottom: 3rem;
+
+  text-align: left;
+  text-justify: justify;
+}
+/* FIM DA ESTILIZAÇÃO DO ÚLTIMO SHOW*/
 
 
 /*Lançamentos*/
@@ -210,6 +262,7 @@ div#destaque {
   height: 3rem;
   padding-block: 1.5rem;
 }
+
 @media (max-width: 479px) {
   #playlist {
     flex-direction: column;
@@ -240,12 +293,16 @@ div#destaque {
     display: none;
   }
 
+  #logo-simples {
+    display: inline-block;
+  }
+
   nav {
       border-bottom: 1px solid #455468;
   }
 
   ul {
-      position: absolute;
+      position: fixed;
       z-index: 10;
 
       width: 100%;
@@ -281,6 +338,20 @@ div#destaque {
   }
 }
 /* FIM DO MEDIA QUERY DO HEADER */
+
+/* MEDIA QUERY ÚLTIMO SHOW */
+@media (min-width: 900px) {
+  #ultimo-show #infos-ultimo-show {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #texto-ultimo-show {
+    margin-left: 3rem;
+  }
+}
+/* FIM DO MEDIA QUERY DO ÚLTIMO SHOW */
 /*PL 3*/
 /*PL 6*/
 /*PL 4*/
