@@ -108,6 +108,10 @@ main {
 /* FIM DA ESTILIZAÇÃO DO HEADER*/
 
 /* ÚLTIMO SHOW */
+#ultimo-show {
+  background-color: #4a4949;
+}
+
 #ultimo-show h2 {
   color: #ef027c;
   font-size: 3rem;
@@ -122,6 +126,9 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  padding: 2.5rem;
+
 }
 
 #video-ultimo-show iframe {
@@ -146,6 +153,46 @@ main {
 
   text-align: left;
   text-justify: justify;
+}
+
+#show-local-date {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-left: 2rem;
+  margin-bottom: 3rem;
+}
+
+#show-local-date h4 {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.circles {
+  display: flex;
+  justify-content: center;
+
+  padding-bottom: 2rem
+}
+
+.black-circle {
+  background: black;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+
+  margin: 0 .5rem 0 .5rem;
+}
+
+.gray-circle {
+  background: #313131;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+
+  margin: 0 .5rem 0 .5rem;
 }
 /* FIM DA ESTILIZAÇÃO DO ÚLTIMO SHOW*/
 
@@ -358,3 +405,21 @@ div#destaque {
 /*PL 5*/
 /*PL 7*/
 /*FOOTER*/
+footer {
+  background-color: #313131;
+}
+
+#footer-wrapper {
+  width: 90%;
+  padding: 1.5rem 0 1.5rem 0;
+  margin: 3rem auto 0 auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footer-text p {
+  font-size: 1.5rem;
+}
