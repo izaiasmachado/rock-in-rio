@@ -60,7 +60,6 @@ button.removerButtonStyle {
   padding: 15px 5%;
   align-items: center;
   background: #313131;
-
 }
 
 #nav-header .logo {
@@ -180,7 +179,7 @@ h2.sectionTitle {
 
 #ultimo-show #infos-ultimo-show #texto-ultimo-show h3 {
   color: #ef027c;
-  font-size: 2.75rem;
+  font-size: 2.5rem;
   margin-left: 2rem;
   margin-bottom: 3rem;
 
@@ -189,7 +188,7 @@ h2.sectionTitle {
 
 #ultimo-show #infos-ultimo-show #texto-ultimo-show article p {
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-left: 2rem;
   margin-bottom: 3rem;
 
@@ -927,9 +926,17 @@ button.publicityBuy {
     text-align: left;
   }
 
-  #destaques-button-container {
+  #wrapper-destaques-container {
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
+
+    width: 100%;
+  }
+
+  #destaques-button-container {
+    background-color: #ff5629;
+    width: fit-content;
   }
 }
 /* FIM DO MEDIA QUERY DOS DESTAQUES */
