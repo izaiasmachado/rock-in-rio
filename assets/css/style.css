@@ -88,6 +88,53 @@ div#destaque {
 }
 
 /* ======== Últimas Avaliações ======== */
+#nome-avaliador{
+  display: flex;
+  align-items: center;
+}
+
+#avaliação{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.caixa-avaliação{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 26rem;
+}
+
+#avaliação-botão {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 20rem;
+  height: 4rem;
+  border-top: 0.2rem ridge #313131;
+  border-bottom: 0.2rem ridge #313131;
+  border-left: 0.2rem ridge #313131;
+  border-right: 0.2rem ridge #313131;
+}
+
+#avaliação-botão img {
+  width: 2rem;
+  height: 2rem;
+  padding-block: 1.5rem;
+}
+
+#avaliação-botão:hover {
+  background-color: #ef027c;
+  transition: background-color 0.4s ease;
+}
+
+#botão-posição{
+  display: flex;
+  justify-content: end;
+}
 /* ======== Entrevistas & Making Of ======== */
 /* ======== PL 1: Top Videos do Momento ======== */
 /* ======== PL 2: Lista de favoritos por usuário  ======== */
@@ -675,3 +722,4 @@ button.publicityBuy {
     max-width: 90%;
   }
 }
+
