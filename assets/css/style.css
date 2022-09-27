@@ -124,7 +124,29 @@ button.removerButtonStyle {
 }
 /* FIM DA ESTILIZAÇÃO DO HEADER*/
 
-/* ÚLTIMO SHOW */
+/*Lançamentos*/
+div#lancamentos {
+  background-color: red;
+  color: #fff;
+  height: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10rem;
+}
+
+h2.sectionTitle {
+  color: #ef027c;
+  font-size: 3rem;
+  margin-left: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* ======== Header ======== */
+/* ======== Último Show ======== */
 #ultimo-show {
   background-color: #4a4949;
 
@@ -214,9 +236,8 @@ button.removerButtonStyle {
 
   margin: 0 .5rem 0 .5rem;
 }
-/* FIM DA ESTILIZAÇÃO DO ÚLTIMO SHOW*/
 
-/* ESTILIZAÇÃO DOS DESTAQUES */
+/* ======== Em destaques ======== */
 #em-destaque h2 {
   color: #ef027c;
   font-size: 3rem;
@@ -226,65 +247,25 @@ button.removerButtonStyle {
   text-align: center
 }
 
-#fotos-destaques {
+#videos-destaques {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  gap: 2rem;
 }
 
-#fotos-destaques img {
-  margin: 2rem;
-}
-
-#destaques-button {
+#destaques-button-container {
   display: flex;
   justify-content: center;
-}
-/* FIM DA ESTILIZAÇÃO DOS DESTAQUES*/
-/*Lançamentos*/
-div#lancamentos {
-  background-color: red;
-  color: #fff;
-  height: 100%;
+
+  margin: auto;
+  width: fit-content;
+
+  background-color: #ff5629;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  gap: 10rem;
-}
-
-button.removerButtonStyle {
-  background: none;
-  color: inherit;
-  border: none;
-  padding: 0;
-  font: inherit;
-  cursor: pointer;
-  outline: inherit;
-}
-h2.sectionTitle {
-  color: #ef027c;
-  font-size: 3rem;
-  margin-left: 2rem;
-  margin-bottom: 3rem;
-}
-
-/* ======== Header ======== */
-/* ======== Lançamentos ======== */
-div#lancamentos {
-  background-color: red;
-  color: #fff;
-  height: 100%;
-}
-
-/* ======== Em destaques ======== */
-div#destaque {
-  background-color: blue;
-  color: #fff;
-}
 
 /* ======== Últimas Avaliações ======== */
 /* ======== Entrevistas & Making Of ======== */
@@ -796,11 +777,15 @@ button.publicityBuy {
   align-items: center;
   flex-direction: row;
   gap: 1rem;
+
   background: #fff;
   color: #000;
+
   border-radius: 1rem;
   padding-inline: 1rem;
+
   font-size: 3rem;
+
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   background-image: linear-gradient(to right, black, #ef027c);
@@ -931,18 +916,18 @@ button.publicityBuy {
 /* MEDIA QUERY DOS DESTAQUES */
 
 @media (min-width: 1150px) {
-  #fotos-destaques {
+  #videos-destaques {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
 
   #em-destaque h2 {
     text-align: left;
   }
 
-  #destaques-button {
+  #destaques-button-container {
     display: flex;
     justify-content: flex-end;
   }
