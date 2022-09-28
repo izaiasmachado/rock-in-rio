@@ -637,7 +637,7 @@ button.publicityBuy {
 }
 
 #videos {
-  width: 80%;
+  width: 95%;
   padding: 1rem 0;
   background: rgb(49, 49, 49, 0.7);
   border-radius: 5px;
@@ -713,9 +713,9 @@ button.publicityBuy {
   margin: 0;
 }
 
-@media (min-width: 520px) {
+@media (min-width: 480px) {
   #videos {
-    width: 70%;
+    width: 90%;
   }
 }
 
