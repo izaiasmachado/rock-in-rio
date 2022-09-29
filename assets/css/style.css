@@ -11,6 +11,10 @@ rosa #ef027c
   font-size: 62.5%;
   /* 1rem = 10px */
   font-family: Georgia, "Times New Roman", Times, serif;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {
@@ -33,6 +37,12 @@ body {
   background-color: black;
   color: white;
 }
+
+main {
+  width: 90%;
+  margin: auto;
+}
+
 button.removerButtonStyle {
   background: none;
   color: inherit;
@@ -49,6 +59,75 @@ a.removeHyperlinkStyle {
 }
 
 /*HEADER*/
+#nav-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 5%;
+  align-items: center;
+  background: #313131;
+}
+
+#nav-header .logo {
+  color: #FFF;
+}
+
+#logo-simples {
+  display: none;
+} 
+
+#nav-hader ul {
+  list-style: none;
+}
+
+#nav-header ul li {
+  display: inline-block;
+}
+
+#nav-header ul li a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #FFF;
+
+  padding: 8px 30px;
+  border-radius: 7px;
+
+  transition: all .3s ease;
+}
+
+#nav-header ul li a:hover,
+#nav-header ul li a.active {
+  color: #FFF;
+  background: #ef027c;
+}
+
+#nav-header #icon {
+  background-color: #ef027c;
+  padding: 5px 7px 3px 7px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+#nav-header #icon svg {
+  color: #FFF;
+  height: 28px;
+  transition: all .3s ease;
+}
+
+#nav-header #icon:hover {
+  background: #FFF;
+}
+
+#nav-header #icon:hover svg {
+  color: #0075FF;
+}
+
+#checkbox,
+#icon {
+  display: none;
+}
+/* FIM DA ESTILIZAÇÃO DO HEADER*/
+
 /*Lançamentos*/
 div#lancamentos {
   background-color: red;
@@ -63,15 +142,6 @@ main {
   gap: 10rem;
 }
 
-button.removerButtonStyle {
-  background: none;
-  color: inherit;
-  border: none;
-  padding: 0;
-  font: inherit;
-  cursor: pointer;
-  outline: inherit;
-}
 h2.sectionTitle {
   color: #ef027c;
   font-size: 3rem;
@@ -80,18 +150,126 @@ h2.sectionTitle {
 }
 
 /* ======== Header ======== */
-/* ======== Lançamentos ======== */
-div#lancamentos {
-  background-color: red;
+/* ======== Último Show ======== */
+#ultimo-show {
+  background-color: #4a4949;
+
+  padding: 1rem;
+  margin-top: 2.5rem;
+}
+
+#ultimo-show h2 {
+  color: #ef027c;
+  font-size: 3rem;
+  margin-left: 2rem;
+  margin-bottom: 3rem;
+
+  text-align: center;
+}
+
+
+#ultimo-show #infos-ultimo-show {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 2.5rem;
+
+}
+
+#video-ultimo-show iframe {
+  width: 49rem;
+  height: 36.66rem;
+}
+
+#ultimo-show #infos-ultimo-show #texto-ultimo-show h3 {
+  color: #ef027c;
+  font-size: 2.5rem;
+  margin-left: 2rem;
+  margin-bottom: 3rem;
+
+  text-align: left;
+}
+
+#ultimo-show #infos-ultimo-show #texto-ultimo-show article p {
   color: #fff;
-  height: 100%;
+  font-size: 2rem;
+  margin-left: 2rem;
+  margin-bottom: 3rem;
+
+  text-align: left;
+  text-justify: justify;
+}
+
+#show-local-date {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-left: 2rem;
+  margin-bottom: 3rem;
+}
+
+#show-local-date h4 {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.circles {
+  display: flex;
+  justify-content: center;
+
+  padding-bottom: 2rem
+}
+
+.black-circle {
+  background: black;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+
+  margin: 0 .5rem 0 .5rem;
+}
+
+.gray-circle {
+  background: #313131;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+
+  margin: 0 .5rem 0 .5rem;
 }
 
 /* ======== Em destaques ======== */
-div#destaque {
-  background-color: blue;
-  color: #fff;
+#em-destaque h2 {
+  color: #ef027c;
+  font-size: 3rem;
+  margin-left: 2rem;
+  margin-bottom: 3rem;
+
+  text-align: center
 }
+
+#videos-destaques {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 2rem;
+}
+
+#destaques-button-container {
+  display: flex;
+  justify-content: center;
+
+  margin: auto;
+  width: fit-content;
+
+  background-color: #ff5629;
+}
+
 
 /* ======== Últimas Avaliações ======== */
 #nome-avaliador {
@@ -678,6 +856,7 @@ input[type="submit"].removeStyle {
   align-content: center;
   padding-bottom: 2rem;
 }
+
 #publicityInfo h2 {
   font-size: 6rem;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -699,11 +878,15 @@ button.publicityBuy {
   align-items: center;
   flex-direction: row;
   gap: 1rem;
+
   background: #fff;
   color: #000;
+
   border-radius: 1rem;
   padding-inline: 1rem;
+
   font-size: 3rem;
+
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   background-image: linear-gradient(to right, black, #ef027c);
@@ -867,6 +1050,128 @@ button.publicityBuy {
     width: 100%;
   }
 }
+@media (min-width: 1280px) {
+}
+
+/* Media query do header */
+@media screen and (max-width: 1024px) {
+  .logo {
+    display: none;
+  }
+
+  #logo-simples {
+    display: inline-block;
+  }
+
+  nav {
+      border-bottom: 1px solid #455468;
+  }
+
+  ul {
+      position: fixed;
+      z-index: 10;
+
+      width: 100%;
+      height: 100vh;
+
+      background-color: #18283B;
+      left: 0;
+      top: 0;
+
+      text-align: center;
+
+      display: none;
+      margin-top: 71px;
+  }
+
+  ul li {
+      display: block;
+      width: 80%;
+      padding: 10px 10px; 
+  }
+
+  ul li a {
+      display: block;
+      padding: 0;
+  }
+
+  #icon {
+      display: block;
+  }
+
+  #checkbox:checked~ul {
+      display: block;
+  }
+}
+/* FIM DO MEDIA QUERY DO HEADER */
+
+/* MEDIA QUERY ÚLTIMO SHOW */
+@media (min-width: 900px) {
+  #ultimo-show #infos-ultimo-show {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #texto-ultimo-show {
+    margin-left: 3rem;
+  }
+}
+/* FIM DO MEDIA QUERY DO ÚLTIMO SHOW */
+
+/* MEDIA QUERY DOS DESTAQUES */
+
+@media (min-width: 1150px) {
+  #videos-destaques {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  #em-destaque h2 {
+    text-align: left;
+  }
+
+  #wrapper-destaques-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    width: 100%;
+  }
+
+  #destaques-button-container {
+    background-color: #ff5629;
+    width: fit-content;
+  }
+}
+/* FIM DO MEDIA QUERY DOS DESTAQUES */
+/*PL 3*/
+/*PL 6*/
+/*PL 4*/
+/*PL 5*/
+/*PL 7*/
+/*FOOTER*/
+footer {
+  background-color: #313131;
+}
+
+#footer-wrapper {
+  width: 90%;
+  padding: 1.5rem 0 1.5rem 0;
+  margin: 3rem auto 0 auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footer-text p {
+  font-size: 1.5rem;
+}
+
 @media (max-width: 768px) {
   #publicityTicket img {
     height: 24rem;
