@@ -53,6 +53,11 @@ button.removerButtonStyle {
   outline: inherit;
 }
 
+a.removeHyperlinkStyle {
+  color: inherit;
+  text-decoration: none;
+}
+
 /*HEADER*/
 #nav-header {
   display: flex;
@@ -267,6 +272,103 @@ h2.sectionTitle {
 
 
 /* ======== Últimas Avaliações ======== */
+#nome-avaliador {
+  display: flex;
+  align-items: center;
+}
+
+#avaliacao {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding-inline: 5rem;
+}
+
+#caixa-avaliacao {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  width: 32rem;
+}
+
+#caixa-data {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+
+.avaliacao-botao {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 20rem;
+  height: 4rem;
+  border-top: 0.2rem ridge #313131;
+  border-bottom: 0.2rem ridge #313131;
+  border-left: 0.2rem ridge #313131;
+  border-right: 0.2rem ridge #313131;
+  cursor: pointer;
+}
+
+.avaliacao-botao img {
+  width: 2rem;
+  height: 2rem;
+  padding-block: 1.5rem;
+}
+
+.avaliacao-botao:hover {
+  background-color: #ef027c;
+  transition: background-color 0.4s ease;
+}
+
+#botao-posicao {
+  display: flex;
+  justify-content: end;
+  padding-top: 5rem;
+}
+
+#imagem-profile {
+  height: 4rem;
+  width: 4rem;
+  padding-right: 1rem;
+}
+
+#imagem-estrela {
+  height: 2.1rem;
+  width: 13rem;
+  padding-right: 10rem;
+}
+
+#imagem-posicao-profile {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+#imagem-posicao-estrela {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media (max-width: 479px) {
+  #caixa-avaliacao {
+    width: 25rem;
+  }
+
+  #imagem-estrela {
+    padding-right: 4rem;
+  }
+}
+
+@media (max-width: 1279px) {
+  #avaliacao {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 /* ======== Entrevistas & Making Of ======== */
 /* ======== PL 1: Top Videos do Momento ======== */
 /* ======== PL 2: Lista de favoritos por usuário  ======== */
@@ -804,6 +906,111 @@ button.publicityBuy {
 }
 
 /* ======== PL 7: Sugestões de Novos Videos Para Assistir ======== */
+#suggestions {
+  width: 100%;
+}
+
+#videosContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#videos {
+  width: 95%;
+  padding: 1rem 0;
+  background: rgb(49, 49, 49, 0.7);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: flex-start;
+}
+
+.videoContainer {
+  margin: 1rem 1rem;
+  max-width: 345px;
+  background: rgb(18, 18, 18, 0.6);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.videoContainer:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  filter: brightness(0.8);
+  border-color: #fff;
+  background-color: rgb(18, 18, 18, 1);
+  transition: all 0.6s ease;
+}
+
+.videoInformation {
+  padding: 1.6rem;
+}
+
+.aboutVideo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.videoMetaData {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.videoThumbContainer {
+  max-width: 345px;
+}
+
+.videoThumbContainer img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.videoTitle {
+  font-size: 1.35rem;
+}
+
+.videoTitle h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.videoDescription {
+  margin: 1rem 0 0 0;
+}
+
+.videoDescription p {
+  font-size: 1.3rem;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 480px) {
+  #videos {
+    width: 90%;
+  }
+}
+
+@media (min-width: 768px) {
+  #videos {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #videos {
+    width: 90%;
+  }
+}
+
 /* ======== Footer ======== */
 /* ======== Media Queries ======== */
 @media (max-width: 479px) {
@@ -981,3 +1188,4 @@ footer {
     max-width: 90%;
   }
 }
+
