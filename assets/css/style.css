@@ -42,6 +42,9 @@ button.removerButtonStyle {
   cursor: pointer;
   outline: inherit;
 }
+img.invertSVG, div.invertSVG img {
+  filter: invert(100%);
+}
 /*HEADER*/
 /*Lançamentos*/
 div#lancamentos {
@@ -550,6 +553,108 @@ input[type="submit"].removeStyle {
 }
 
 /* ======== PL 5: Fórum de Comentários e Discussões Sobre os Vídeos ======== */
+#forumPostsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#forumPosts {
+  width: 100%;
+}
+
+.forumPostWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  border-bottom: #f2f2f2 solid 0.1rem;
+  cursor: pointer;
+}
+
+.forumPostWrapper:last-child {
+  border: 0;
+}
+
+.forumPostWrapper:hover {
+  transform: translateX(+1px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  border-color: rgb(70, 70, 73);
+  background-color: rgb(31, 31, 31, 1);
+  transition: all 0.6s ease-in-out;
+}
+
+.forumPostHeaderTitle h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0;
+}
+
+.forumPostBody {
+  font-size: 1.4rem;
+}
+
+.forumPostHeader {
+  margin-bottom: 1rem;
+}
+
+.forumPostHeaderInfo {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.forumPostHeaderInfo > * {
+  margin-right: 1rem;
+}
+
+.forumPostHeaderItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.4rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.forumPostWrapper:nth-child(4n + 1) .forumPostHeaderItem {
+  background-color: #cf2e2e;
+}
+
+.forumPostWrapper:nth-child(4n + 2) .forumPostHeaderItem {
+  background-color: #337ab7;
+}
+
+.forumPostWrapper:nth-child(4n + 3) .forumPostHeaderItem {
+  background-color: #ef027c;
+}
+
+.forumPostWrapper:nth-child(4n) .forumPostHeaderItem {
+  background-color: #ff5629;
+}
+
+.forumPostHeaderItemText {
+  font-weight: bold;
+}
+
+.forumPostHeaderItemText h4, .forumPostHeaderItemText p {
+  font-weight: inherit;
+  margin: 0;
+}
+
+.forumPostHeaderItemImage {
+  transform: scale(0.9);
+  width: 1.5rem;
+  margin-right: 0.2rem;
+}
+
+@media (min-width: 768px) {
+  #forumPosts {
+    width: 50%;
+  }
+}
+
 /* ======== PL 6: Publicidade ======== */
 #publicity {
   width: 100%;
