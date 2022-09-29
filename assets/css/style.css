@@ -135,18 +135,17 @@ div#lancamentos {
   height: 100%;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  gap: 10rem;
-}
-
 h2.sectionTitle {
   color: #ef027c;
   font-size: 3rem;
   margin-left: 2rem;
   margin-bottom: 3rem;
+}
+
+@media (max-width: 450px) {
+  #logo-simples {
+    display: none;
+  }
 }
 
 /* ======== Header ======== */
@@ -1063,6 +1062,11 @@ button.publicityBuy {
     display: inline-block;
   }
 
+  #logo-simples img {
+    width: 300px;
+    height: 100px;
+  }
+
   nav {
       border-bottom: 1px solid #455468;
   }
@@ -1101,6 +1105,12 @@ button.publicityBuy {
 
   #checkbox:checked~ul {
       display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  #logo-simples img {
+    display: none;
   }
 }
 /* FIM DO MEDIA QUERY DO HEADER */
