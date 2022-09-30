@@ -58,6 +58,23 @@ a.removeHyperlinkStyle {
   text-decoration: none;
 }
 
+.wrapperRainbowButtonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.rainbowButtonContainer {
+  background-color: #ff5629;
+  width: fit-content;
+}
+
+.rainbowButtonContainer:hover {
+  filter: brightness(0.6);
+  transition: all 0.4s ease;
+}
+
 /*HEADER*/
 #nav-header {
   display: flex;
@@ -271,13 +288,9 @@ h2.sectionTitle {
 #destaques-button-container {
   display: flex;
   justify-content: center;
-
   margin: auto;
   width: fit-content;
-
-  background-color: #ff5629;
 }
-
 
 /* ======== Últimas Avaliações ======== */
 #nome-avaliador {
@@ -306,33 +319,10 @@ h2.sectionTitle {
   font-size: 1.5rem;
 }
 
-.avaliacao-botao {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 20rem;
-  height: 4rem;
-  border-top: 0.2rem ridge #313131;
-  border-bottom: 0.2rem ridge #313131;
-  border-left: 0.2rem ridge #313131;
-  border-right: 0.2rem ridge #313131;
-  cursor: pointer;
-}
-
-.avaliacao-botao img {
-  width: 2rem;
-  height: 2rem;
-  padding-block: 1.5rem;
-}
-
-.avaliacao-botao:hover {
-  background-color: #ef027c;
-  transition: background-color 0.4s ease;
-}
-
 #botao-posicao {
   display: flex;
-  justify-content: end;
+  justify-content: center;
+  align-items: center;
   padding-top: 5rem;
 }
 
@@ -368,6 +358,14 @@ h2.sectionTitle {
 
   #imagem-estrela {
     padding-right: 4rem;
+  }
+
+  #avaliacao .wrapperRainbowButtonContainer{
+    width: 70%;
+  }
+
+  #avaliacao .wrapperRainbowButtonContainer button{
+    font-size: 2.5rem;
   }
 }
 
