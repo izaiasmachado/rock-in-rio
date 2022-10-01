@@ -1083,6 +1083,7 @@ input[type="submit"].removeStyle {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   background-image: linear-gradient(to right, black, #ef027c);
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   margin: 0;
 }
@@ -1112,6 +1113,7 @@ button.publicityBuy {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   background-image: linear-gradient(to right, black, #ef027c);
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 #publicityInfo button:hover {
