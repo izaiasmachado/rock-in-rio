@@ -438,7 +438,7 @@ h2.sectionTitle {
 
 @media (max-width: 479px) {
   #makinof iframe{
-    width: 34rem;
+    width: 90%;
   }
 
   #makinof .wrapperRainbowButtonContainer{
