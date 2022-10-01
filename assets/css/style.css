@@ -1140,19 +1140,16 @@ button.publicityBuy {
 }
 
 #videos {
-  width: 95%;
-  padding: 1rem 0;
+  max-width: 90%;
+  padding: 1rem;
   background: rgb(49, 49, 49, 0.7);
   border-radius: 5px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-content: flex-start;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 1rem;
 }
 
 .videoContainer {
-  margin: 1rem 1rem;
   max-width: 345px;
   background: rgb(18, 18, 18, 0.6);
   border-radius: 4px;
@@ -1214,24 +1211,6 @@ button.publicityBuy {
   font-size: 1.3rem;
   padding: 0;
   margin: 0;
-}
-
-@media (min-width: 480px) {
-  #videos {
-    width: 90%;
-  }
-}
-
-@media (min-width: 768px) {
-  #videos {
-    width: 100%;
-  }
-}
-
-@media (min-width: 1024px) {
-  #videos {
-    width: 90%;
-  }
 }
 
 /* ======== Footer ======== */
