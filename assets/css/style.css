@@ -61,7 +61,7 @@ a.removeHyperlinkStyle {
 .wrapperRainbowButtonContainer {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
   width: 100%;
 }
 
@@ -303,14 +303,13 @@ h2.sectionTitle {
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-  padding-inline: 5rem;
 }
 
 #caixa-avaliacao {
   display: flex;
   flex-direction: column;
   font-size: 1.5rem;
-  width: 32rem;
+  width: 35rem;
 }
 
 #caixa-data {
@@ -343,6 +342,7 @@ h2.sectionTitle {
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-around;
+  padding: 1rem;
 }
 
 #imagem-posicao-estrela {
@@ -376,6 +376,80 @@ h2.sectionTitle {
   }
 }
 /* ======== Entrevistas & Making Of ======== */
+
+#makinof {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  justify-content: center;
+}
+
+#background-makingof{
+  width: 100%;
+  background-color: #31313131 ;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+#makinof iframe{
+  width: 40rem;
+  height: 22.5rem;
+  padding: 1rem;
+}
+
+.nome-musico{
+  font-size: large;
+  align-self: flex-start;
+  padding-left: 1rem;
+}
+
+.descricao{
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  justify-items: space-between;
+  font-size: 1.3rem;
+  padding-left: 1rem;
+}
+
+.descricao2{
+  flex-direction: row;
+  align-self: flex-start;
+  font-size: 1.3rem;
+  padding-left: 1rem;
+}
+
+.negrito{
+  font-weight: bold;
+}
+
+#container-video{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 1279px) {
+  #makinof {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 479px) {
+  #makinof iframe{
+    width: 90%;
+  }
+
+  #makinof .wrapperRainbowButtonContainer{
+    width: 70%;
+  }
+
+  #makinof .wrapperRainbowButtonContainer button{
+    font-size: 2.5rem;
+  }
+  
+}
 /* ======== PL 1: Top Videos do Momento ======== */
 /* ======== PL 2: Lista de favoritos por usuário  ======== */
 #favoritesList {
