@@ -376,6 +376,71 @@ h2.sectionTitle {
   }
 }
 /* ======== Entrevistas & Making Of ======== */
+
+#makinof {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#background-makingof{
+  width: 100%;
+  background-color: #31313131 ;
+}
+
+#makinof iframe{
+  width: 40rem;
+  height: 22.5rem;
+  padding: 1rem;
+}
+
+.nome-musico{
+  font-size: large;
+  align-self: flex-start;
+  padding-left: 1rem;
+}
+
+.descricao{
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  justify-self: space-between;
+  font-size: 1.3rem;
+  padding-left: 1rem;
+}
+
+.descricao2{
+  flex-direction: row;
+  align-self: flex-start;
+  font-size: 1.3rem;
+  padding-left: 1rem;
+}
+
+.negrito{
+  font-weight: bold;
+}
+
+#container-video{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 1279px) {
+  #makinof {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 479px) {
+  #makinof iframe{
+    width: 29rem;
+    height: 23rem;
+  }
+  
+}
 /* ======== PL 1: Top Videos do Momento ======== */
 /* ======== PL 2: Lista de favoritos por usuário  ======== */
 #favoritesList {
