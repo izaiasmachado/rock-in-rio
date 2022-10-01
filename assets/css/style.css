@@ -321,7 +321,8 @@ h2.sectionTitle {
 
 #botao-posicao {
   display: flex;
-  justify-content: end;
+  justify-content: center;
+  align-items: center;
   padding-top: 5rem;
 }
 
@@ -357,6 +358,14 @@ h2.sectionTitle {
 
   #imagem-estrela {
     padding-right: 4rem;
+  }
+
+  #avaliacao .wrapperRainbowButtonContainer{
+    width: 70%;
+  }
+
+  #avaliacao .wrapperRainbowButtonContainer button{
+    font-size: 2.5rem;
   }
 }
 
