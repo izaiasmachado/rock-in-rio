@@ -1259,7 +1259,7 @@ button.publicityBuy {
 }
 
 /* Media query do header */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1040px) {
   #checkbox:checked~ul {
     display: block;
     padding-left: 0;
@@ -1318,7 +1318,6 @@ button.publicityBuy {
 @media (max-width: 500px) {
   #logo-simples img {
     width: 100%;
-    height: 100px;
   }
 }
 /* FIM DO MEDIA QUERY DO HEADER */
