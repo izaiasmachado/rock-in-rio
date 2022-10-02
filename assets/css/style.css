@@ -75,6 +75,10 @@ a.removeHyperlinkStyle {
   transition: all 0.4s ease;
 }
 
+.negrito{
+  font-weight: bold;
+}
+
 /*HEADER*/
 #nav-header {
   display: flex;
@@ -428,7 +432,6 @@ h2.sectionTitle {
   display: flex;
   flex-direction: row;
   align-self: flex-start;
-  justify-items: space-between;
   font-size: 1.3rem;
   padding-left: 1rem;
 }
@@ -440,8 +443,16 @@ h2.sectionTitle {
   padding-left: 1rem;
 }
 
-.negrito{
-  font-weight: bold;
+#espaco-descricao1{
+  padding-right: 13rem;
+}
+
+#espaco-descricao2{
+  padding-right: 11rem;
+}
+
+#espaco-descricao3{
+  padding-right: 10rem;
 }
 
 #container-video{
@@ -468,6 +479,18 @@ h2.sectionTitle {
 
   #makinof .wrapperRainbowButtonContainer button{
     font-size: 2.5rem;
+  }
+
+  #makinof #espaco-descricao1{
+    padding-right: 3.5rem;
+  }
+
+  #makinof #espaco-descricao2{
+    padding-right: 1.8rem;
+  }
+
+  #makinof #espaco-descricao3{
+    padding-right: 1.5rem;
   }
   
 }
