@@ -455,8 +455,6 @@ h2.sectionTitle {
 #topVideosBox{
   display: flex;
   justify-content: space-around;
-  border-style: solid;
-  border-radius: 0.5rem;
 }
 
 #topVideosItems {
@@ -477,6 +475,13 @@ h2.sectionTitle {
   justify-content: center;
   font-size: 3rem;
   padding-top: 1rem;
+}
+
+@media (max-width: 479px) {
+  #topVideosBox .topVideosContainer{
+    height: 40rem;
+  }
+  
 }
 
 /* ======== PL 2: Lista de favoritos por usuário  ======== */
