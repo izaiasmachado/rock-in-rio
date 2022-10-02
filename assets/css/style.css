@@ -83,7 +83,7 @@ a.removeHyperlinkStyle {
   position: fixed;
   align-items: center;
   background: #313131;
-  width: 90%;
+  width: 95%;
   z-index: 1;
   top: 0;
 }
@@ -170,7 +170,6 @@ h2.sectionTitle {
 @media (max-width: 450px) {
   #logo-simples img {
     width: 100%;
-    height: 100px;
   }
 }
 
@@ -292,6 +291,20 @@ h2.sectionTitle {
   width: fit-content;
 }
 
+#botao-destaques {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+#botao-destaques .wrapperRainbowButtonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 78%;
+}
+
 /* ======== Últimas Avaliações ======== */
 #nome-avaliador {
   display: flex;
@@ -365,6 +378,14 @@ h2.sectionTitle {
   }
 
   #avaliacao .wrapperRainbowButtonContainer button{
+    font-size: 2.5rem;
+  }
+
+  #em-destaque .wrapperRainbowButtonContainer{
+    width: 70%;
+  }
+
+  #em-destaque .wrapperRainbowButtonContainer button{
     font-size: 2.5rem;
   }
 }
@@ -1259,7 +1280,7 @@ button.publicityBuy {
 }
 
 /* Media query do header */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1230px) {
   #checkbox:checked~ul {
     display: block;
     padding-left: 0;
@@ -1318,7 +1339,6 @@ button.publicityBuy {
 @media (max-width: 500px) {
   #logo-simples img {
     width: 100%;
-    height: 100px;
   }
 }
 /* FIM DO MEDIA QUERY DO HEADER */
