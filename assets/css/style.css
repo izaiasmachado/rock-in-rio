@@ -291,6 +291,20 @@ h2.sectionTitle {
   width: fit-content;
 }
 
+#botao-destaques {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+#botao-destaques .wrapperRainbowButtonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 78%;
+}
+
 /* ======== Últimas Avaliações ======== */
 #nome-avaliador {
   display: flex;
@@ -364,6 +378,14 @@ h2.sectionTitle {
   }
 
   #avaliacao .wrapperRainbowButtonContainer button{
+    font-size: 2.5rem;
+  }
+
+  #em-destaque .wrapperRainbowButtonContainer{
+    width: 70%;
+  }
+
+  #em-destaque .wrapperRainbowButtonContainer button{
     font-size: 2.5rem;
   }
 }
