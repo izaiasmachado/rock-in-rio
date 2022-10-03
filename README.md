@@ -10,6 +10,9 @@ Basta [clicar aqui](https://izaias.me/rock-in-rio-landing-page/) para acessar no
 - HTML5
 - CSS3
 
+## Padrões de Desenvolvimento
+No arquivo de [definições do projeto](./docs/definicoes-do-projeto.md) foram listadas as partes que cada integrante da equipe ficou responsável, definições das partes livres do wireframe e também a paleta de cores do projeto. 
+
 ## Motivação
 Esse projeto é feito como atividade da disciplina de Tecnologias Web. Portanto, o [roteiro da atividade](./docs/roteiro.md) está disponível na documentação do projeto.
 
