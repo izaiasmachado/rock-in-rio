@@ -534,21 +534,25 @@ h2.sectionTitle {
   display: flex;
   align-items: flex-start;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 2rem;
 }
 
 #playlist iframe {
-  width: 49rem;
-  height: 36.66rem;
+  width: 50%;
+  height: 50vh;
 }
 
 #playlistMenu {
   display: block;
+  width: 50%;
+  height: 50vh;
 }
 
 #playlistInfo {
   background-color: #31313148;
   border: 0.2rem ridge #313131;
+  height: 10vh;
 }
 
 #playlistInfo h3,
@@ -559,10 +563,11 @@ h2.sectionTitle {
 #playlistItems {
   background: transparent;
   border: 0.2rem ridge #313131;
+  height: 40vh;
 }
 
 #playlistVideoItems {
-  height: 24rem;
+  height: 30vh;
   overflow-y: auto;
 }
 
@@ -628,6 +633,7 @@ h2.sectionTitle {
   align-items: center;
   justify-content: center;
   border-top: 0.2rem ridge #313131;
+  height: 10vh;
 }
 
 #playlistLastItem img {
