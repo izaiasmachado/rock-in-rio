@@ -1,7 +1,24 @@
 # Definições do Projeto
 
+## Divisão das Tarefas
+| **Seção** | **Responsável** |
+| ----- | ----------- |
+| Header | William |
+| Lançamentos | William |
+| Em destaque | William |
+| Últimas avaliações | Gabriel |
+| Entrevistas & Making Of | Gabriel |
+| Parte Livre 01 | Gabriel |
+| Parte Livre 02 | Marcos |
+| Parte Livre 03 + Sobre Equipe | Marcos |
+| Novidades + Parte Livre 04 | Izaias |
+| Parte Livre 05 | Izaias |
+| Parte Livre 06 | Marcos |
+| Parte Livre 07 | Izaias |
+| Footer | William |
+
 ## Partes Livres
-| Seção | Funcionalidade |
+| **Seção** | **Funcionalidade** |
 | ----------- | -------------- |
 | Parte Livre 01 | Top 10 vídeos no momento |
 | Parte Livre 02 | Criação de uma lista de favoritos por usuário |
@@ -13,7 +30,7 @@
 
 ## Paleta de Cores
 
-| Código | Hex | ![Color Picker Boxes](https://draculatheme.com/static/img/color-boxes/eyedropper.png) |
+| **Código** | **Hex** | ![Color Picker Boxes](https://draculatheme.com/static/img/color-boxes/eyedropper.png) |
 | ------------ | --------- | ------------- |
 | Laranja | `#ff5629` | ![Laranja](https://dummyimage.com/20x20/ff5729/000000.png&text=+) |
 | Preto | `#000000` | ![Preto](https://dummyimage.com/20x20/000000/000000.png&text=+) |
