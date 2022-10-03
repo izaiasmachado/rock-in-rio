@@ -1,3 +1,16 @@
+# Definições do Projeto
+
+## Partes Livres
+| Seção | Funcionalidade |
+| ----------- | -------------- |
+| Parte Livre 01 | Top 10 vídeos no momento |
+| Parte Livre 02 | Criação de uma lista de favoritos por usuário |
+| Parte Livre 03 | Comunidades de vídeos temáticos |
+| Parte Livre 04 | Formulário para cadastro de informações sobre os vídeos postado na comunidade de vídeos temáticos |
+| Parte Livre 05 | Fórum de comentários e discussões sobre os vídeos |
+| Parte Livre 06 | Propagandas |
+| Parte Livre 07 | Sugestões de novos vídeos |
+
 ## Paleta de Cores
 
 | Código | Hex | ![Color Picker Boxes](https://draculatheme.com/static/img/color-boxes/eyedropper.png) |
