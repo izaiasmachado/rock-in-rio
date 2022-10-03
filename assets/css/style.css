@@ -39,6 +39,18 @@ body {
   margin: 0;
 }
 
+main {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1230px) {
+  main {
+    margin-top: 20rem;
+  }
+}
+
 button.removerButtonStyle {
   background: none;
   color: inherit;
@@ -182,9 +194,7 @@ h2.sectionTitle {
 /* ======== Último Show ======== */
 #ultimo-show {
   background-color: #4a4949;
-
   padding: 1rem;
-  margin-top: 25.5rem;
 }
 
 #ultimo-show h2 {
