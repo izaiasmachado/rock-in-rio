@@ -1266,7 +1266,7 @@ button.publicityBuy {
   background: rgb(49, 49, 49, 0.7);
   border-radius: 5px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
   grid-gap: 1rem;
 }
 
