@@ -1266,7 +1266,7 @@ button.publicityBuy {
   background: rgb(49, 49, 49, 0.7);
   border-radius: 5px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
   grid-gap: 1rem;
 }
 
@@ -1299,13 +1299,6 @@ button.publicityBuy {
   align-content: space-between;
 }
 
-.videoMetaData {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .videoThumbContainer {
   max-width: 345px;
 }
@@ -1313,6 +1306,10 @@ button.publicityBuy {
 .videoThumbContainer img {
   max-height: 100%;
   max-width: 100%;
+}
+
+.videoTitle, .videoDescription {
+  width: 100%;
 }
 
 .videoTitle {
