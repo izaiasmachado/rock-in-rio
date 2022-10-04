@@ -10,7 +10,7 @@ rosa #ef027c
 :root {
   font-size: 62.5%;
   /* 1rem = 10px */
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
 
   margin: 0;
   padding: 0;
@@ -37,6 +37,22 @@ body {
   background-color: black;
   color: white;
   margin: 0;
+}
+
+main {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+}
+
+main section {
+  margin-bottom: 10rem;
+}
+
+@media (min-width: 1230px) {
+  main {
+    margin-top: 20rem;
+  }
 }
 
 button.removerButtonStyle {
@@ -182,9 +198,7 @@ h2.sectionTitle {
 /* ======== Último Show ======== */
 #ultimo-show {
   background-color: #4a4949;
-
   padding: 1rem;
-  margin-top: 25.5rem;
 }
 
 #ultimo-show h2 {
@@ -1487,7 +1501,7 @@ footer {
 #footer-wrapper {
   width: 90%;
   padding: 1.5rem 0 1.5rem 0;
-  margin: 3rem auto 0 auto;
+  margin: 0 auto 0 auto;
 
   display: flex;
   flex-direction: row;
