@@ -335,39 +335,39 @@ h2.sectionTitle {
   justify-content: center;
 }
 
-#caixa-avaliacao {
+.caixa-avaliacao {
   display: flex;
   flex-direction: column;
   font-size: 1.5rem;
   width: 35rem;
 }
 
-#caixa-data {
+.caixa-data {
   display: flex;
   flex-direction: column;
   font-size: 1.5rem;
 }
 
-#botao-posicao {
+.botao-posicao {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 5rem;
 }
 
-#imagem-profile {
+.imagem-profile {
   height: 4rem;
   width: 4rem;
   padding-right: 1rem;
 }
 
-#imagem-estrela {
+.imagem-estrela {
   height: 2.1rem;
   width: 13rem;
   padding-right: 10rem;
 }
 
-#imagem-posicao-profile {
+.imagem-posicao-profile {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -375,18 +375,18 @@ h2.sectionTitle {
   padding: 1rem;
 }
 
-#imagem-posicao-estrela {
+.imagem-posicao-estrela {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
 @media (max-width: 479px) {
-  #caixa-avaliacao {
+  .caixa-avaliacao {
     width: 25rem;
   }
 
-  #imagem-estrela {
+  .imagem-estrela {
     padding-right: 4rem;
   }
 
@@ -468,7 +468,7 @@ h2.sectionTitle {
   padding-right: 10rem;
 }
 
-#container-video {
+.container-video {
   display: flex;
   flex-direction: column;
   align-items: center;
