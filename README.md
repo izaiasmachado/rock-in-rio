@@ -4,7 +4,7 @@
 Essa lading page reune videos, fotos e informações relevantes sobre o Rock In Rio 2022.
 
 ## Como usar?
-Basta [clicar aqui](https://izaias.me/rock-in-rio-landing-page/) para acessar nossa página.
+Basta [clicar aqui](https://izaias.me/rock-in-rio) para acessar nossa página.
 
 ## Tecnologias Utilizadas
 - HTML5
