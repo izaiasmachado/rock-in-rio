@@ -10,7 +10,7 @@ rosa #ef027c
 :root {
   font-size: 62.5%;
   /* 1rem = 10px */
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
 
   margin: 0;
   padding: 0;
@@ -43,6 +43,10 @@ main {
   margin-top: 10rem;
   display: flex;
   flex-direction: column;
+}
+
+main section {
+  margin-bottom: 10rem;
 }
 
 @media (min-width: 1230px) {
@@ -1469,7 +1473,7 @@ footer {
 #footer-wrapper {
   width: 90%;
   padding: 1.5rem 0 1.5rem 0;
-  margin: 3rem auto 0 auto;
+  margin: 0 auto 0 auto;
 
   display: flex;
   flex-direction: row;
