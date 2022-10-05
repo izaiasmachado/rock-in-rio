@@ -225,15 +225,6 @@ h2.sectionTitle {
   padding: 2.5rem;
 }
 
-#video-ultimo-show {
-  width: 40vw;
-  height: 40vh;
-}
-
-#video-ultimo-show iframe {
-  width: 100%;
-  height: 100%;
-}
 
 #ultimo-show #infos-ultimo-show #texto-ultimo-show h3 {
   color: #ef027c;
@@ -1470,6 +1461,18 @@ button.publicityBuy {
     height: 45vh;
   }
 
+  #video-ultimo-show iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 600px) {
+  #video-ultimo-show {
+    width: 40vw;
+    height: 40vh;
+  }
+  
   #video-ultimo-show iframe {
     width: 100%;
     height: 100%;
