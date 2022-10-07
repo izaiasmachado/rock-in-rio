@@ -367,7 +367,6 @@ h2.sectionTitle {
 .imagem-estrela {
   height: 2.1rem;
   width: 13rem;
-  padding-right: 10rem;
 }
 
 .imagem-posicao-profile {
@@ -375,13 +374,13 @@ h2.sectionTitle {
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-around;
-  padding: 1rem;
 }
 
 .imagem-posicao-estrela {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
 
 @media (max-width: 479px) {
@@ -445,11 +444,12 @@ h2.sectionTitle {
 }
 
 .descricao {
+  width: 41rem;
   display: flex;
-  flex-direction: row;
-  align-self: flex-start;
+  justify-content: space-between;
   font-size: 1.3rem;
   padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .descricao2 {
@@ -459,19 +459,8 @@ h2.sectionTitle {
   padding-left: 1rem;
 }
 
-#espaco-descricao1 {
-  padding-right: 13rem;
-}
-
-#espaco-descricao2 {
-  padding-right: 11rem;
-}
-
-#espaco-descricao3 {
-  padding-right: 10rem;
-}
-
 .container-video {
+  width: 43rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -495,18 +484,6 @@ h2.sectionTitle {
 
   #makinof .wrapperRainbowButtonContainer button {
     font-size: 2.5rem;
-  }
-
-  #makinof #espaco-descricao1 {
-    padding-right: 3.5rem;
-  }
-
-  #makinof #espaco-descricao2 {
-    padding-right: 1.8rem;
-  }
-
-  #makinof #espaco-descricao3 {
-    padding-right: 1.5rem;
   }
 }
 /* ======== PL 1: Top Videos do Momento ======== */
