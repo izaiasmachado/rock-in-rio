@@ -485,6 +485,16 @@ h2.sectionTitle {
   #makinof .wrapperRainbowButtonContainer button {
     font-size: 2.5rem;
   }
+
+  .container-video{
+    width: 25rem;
+  }
+
+  .descricao{
+    width: 23rem;
+    flex-direction: column;
+  }
+
 }
 /* ======== PL 1: Top Videos do Momento ======== */
 
