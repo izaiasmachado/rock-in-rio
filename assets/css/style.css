@@ -1378,6 +1378,25 @@ button.publicityBuy {
 }
 
 /* ======== Footer ======== */
+footer {
+  background-color: #313131;
+}
+
+#footer-wrapper {
+  width: 90%;
+  padding: 1.5rem 0 1.5rem 0;
+  margin: 0 auto 0 auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footer-text p {
+  font-size: 1.5rem;
+}
+
 /* ======== Media Queries ======== */
 @media (max-width: 479px) {
   /*========Lista de favoritos por usuário========*/
@@ -1483,31 +1502,6 @@ button.publicityBuy {
   }
 }
 /* FIM DO MEDIA QUERY DOS DESTAQUES */
-/*PL 3*/
-/*PL 6*/
-/*PL 4*/
-/*PL 5*/
-/*PL 7*/
-/*FOOTER*/
-footer {
-  background-color: #313131;
-}
-
-#footer-wrapper {
-  width: 90%;
-  padding: 1.5rem 0 1.5rem 0;
-  margin: 0 auto 0 auto;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#footer-text p {
-  font-size: 1.5rem;
-}
-
 @media (max-width: 768px) {
   #publicityTicket img {
     height: 22rem;
