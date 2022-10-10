@@ -14,7 +14,7 @@
 
 ### Marcos
 
-- [Linkedin](https://www.linkedin.com/in/marcosvinciusandradedesousa/
+- [Linkedin](https://www.linkedin.com/in/marcosvinciusandradedesousa/)
 - [Github](https://github.com/MarcosVini9999)
 
 ### William
