@@ -1,7 +1,29 @@
 # Rock In Rio - Landing Page
 
+## Desenvolvedores
+
+### Gabriel
+
+- [Linkedin](https://www.linkedin.com/in/gabriel-santos-298331253/)
+- [Github](https://github.com/GabVS4)
+
+### Izaias
+
+- [Linkedin](https://www.linkedin.com/in/izaiasmachado/)
+- [Github](https://github.com/izaiasmachado)
+
+### Marcos
+
+- [Linkedin](https://www.linkedin.com/in/marcosvinciusandradedesousa/
+- [Github](https://github.com/MarcosVini9999)
+
+### William
+
+- [Linkedin](https://www.linkedin.com/in/william-bruno-sales/)
+- [Github](https://github.com/williambrunos)
+
 ## Sobre o Projeto
-Essa lading page reune videos, fotos e informações relevantes sobre o Rock In Rio 2022.
+Essa landing page reúne videos, fotos e informações relevantes sobre o Rock In Rio 2022.
 
 ## Como usar?
 Basta [clicar aqui](https://izaias.me/rock-in-rio) para acessar nossa página.
