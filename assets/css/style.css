@@ -1520,6 +1520,10 @@ footer {
   font-size: 1.5rem;
 }
 
+footer p a { 
+  color: white;
+}
+
 @media (max-width: 768px) {
   #publicityTicket img {
     height: 22rem;
