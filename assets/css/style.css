@@ -96,7 +96,20 @@ a.removeHyperlinkStyle {
   font-weight: bold;
 }
 
-/*HEADER*/
+h2.sectionTitle {
+  color: #ef027c;
+  font-size: 3rem;
+  margin-left: 2rem;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 450px) {
+  #logo-simples img {
+    width: 100%;
+  }
+}
+
+/* ======== Header ======== */
 header {
   display: flex;
   flex-direction: row;
@@ -179,29 +192,73 @@ header {
 #icon {
   display: none;
 }
-/* FIM DA ESTILIZAÇÃO DO HEADER*/
 
-/*Lançamentos*/
-div#lancamentos {
-  background-color: red;
-  color: #fff;
-  height: 100%;
-}
-
-h2.sectionTitle {
-  color: #ef027c;
-  font-size: 3rem;
-  margin-left: 2rem;
-  margin-bottom: 3rem;
-}
-
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   #logo-simples img {
     width: 100%;
   }
 }
 
-/* ======== Header ======== */
+@media screen and (max-width: 1290px) {
+  #checkbox:checked ~ ul {
+    display: block;
+    padding-left: 0;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  #logo-simples {
+    display: inline-block;
+  }
+
+  #logo-simples img {
+    width: 100%;
+    height: 50px;
+  }
+
+  ul {
+    position: fixed;
+    z-index: 10;
+
+    width: 100%;
+    height: 100vh;
+
+    background-color: #18283b;
+    left: 0;
+    top: 0;
+
+    text-align: center;
+
+    display: none;
+    margin-top: 71px;
+  }
+
+  ul li {
+    display: block;
+    width: 80%;
+    padding: 10px 10px;
+  }
+
+  ul li a {
+    display: block;
+    padding: 0;
+  }
+
+  #icon {
+    display: block;
+  }
+
+  #checkbox:checked ~ ul {
+    display: block;
+  }
+
+  header {
+    background: #313131;
+  }
+}
+
 /* ======== Último Show ======== */
 #ultimo-show {
   background-color: #4a4949;
@@ -224,7 +281,6 @@ h2.sectionTitle {
 
   padding: 2.5rem;
 }
-
 
 #ultimo-show #infos-ultimo-show #texto-ultimo-show h3 {
   color: #ef027c;
@@ -415,8 +471,8 @@ h2.sectionTitle {
     align-items: center;
   }
 }
-/* ======== Entrevistas & Making Of ======== */
 
+/* ======== Entrevistas & Making Of ======== */
 #makinof {
   display: flex;
   flex-direction: row;
@@ -486,18 +542,17 @@ h2.sectionTitle {
     font-size: 2.5rem;
   }
 
-  .container-video{
+  .container-video {
     width: 25rem;
   }
 
-  .descricao{
+  .descricao {
     width: 23rem;
     flex-direction: column;
   }
-
 }
-/* ======== PL 1: Top Videos do Momento ======== */
 
+/* ======== PL 1: Top Videos do Momento ======== */
 #topVideosBox {
   display: flex;
   justify-content: space-around;
@@ -505,7 +560,7 @@ h2.sectionTitle {
 
 #topVideosItems {
   width: 95%;
-  overflow-x: auto; 
+  overflow-x: auto;
 }
 
 .topVideosContainer {
@@ -529,11 +584,11 @@ h2.sectionTitle {
   width: auto;
 }
 
-.image-container{
-  background-color: rgb(18, 18, 18, 0.9) ;
+.image-container {
+  background-color: rgb(18, 18, 18, 0.9);
 }
 
-.image-container :hover{
+.image-container :hover {
   transform: translateY(-5px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   -webkit-transition-property: transform;
@@ -546,7 +601,7 @@ h2.sectionTitle {
 }
 
 @media (max-width: 479px) {
-  #topVideosBox .image-poster-size{
+  #topVideosBox .image-poster-size {
     height: 35rem;
   }
 }
@@ -1298,7 +1353,8 @@ button.publicityBuy {
   max-width: 100%;
 }
 
-.videoTitle, .videoDescription {
+.videoTitle,
+.videoDescription {
   width: 100%;
 }
 
@@ -1363,74 +1419,6 @@ button.publicityBuy {
 @media (min-width: 1280px) {
 }
 
-/* Media query do header */
-@media screen and (max-width: 1290px) {
-  #checkbox:checked ~ ul {
-    display: block;
-    padding-left: 0;
-  }
-
-  .logo {
-    display: none;
-  }
-
-  #logo-simples {
-    display: inline-block;
-  }
-
-  #logo-simples img {
-    width: 100%;
-    height: 50px;
-  }
-
-  ul {
-    position: fixed;
-    z-index: 10;
-
-    width: 100%;
-    height: 100vh;
-
-    background-color: #18283b;
-    left: 0;
-    top: 0;
-
-    text-align: center;
-
-    display: none;
-    margin-top: 71px;
-  }
-
-  ul li {
-    display: block;
-    width: 80%;
-    padding: 10px 10px;
-  }
-
-  ul li a {
-    display: block;
-    padding: 0;
-  }
-
-  #icon {
-    display: block;
-  }
-
-  #checkbox:checked ~ ul {
-    display: block;
-  }
-
-  header {
-    background: #313131;
-  }
-}
-
-@media (max-width: 500px) {
-  #logo-simples img {
-    width: 100%;
-  }
-}
-/* FIM DO MEDIA QUERY DO HEADER */
-
 /* MEDIA QUERY ÚLTIMO SHOW */
 @media (min-width: 1200px) {
   #ultimo-show #infos-ultimo-show {
@@ -1459,7 +1447,7 @@ button.publicityBuy {
     width: 40vw;
     height: 40vh;
   }
-  
+
   #video-ultimo-show iframe {
     width: 100%;
     height: 100%;
