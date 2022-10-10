@@ -1228,20 +1228,19 @@ input[type="submit"].removeStyle {
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  padding-block: 2rem;
 }
-#publicityTicket {
-  padding-top: 2rem;
+
+.publicityTicket img {
+  height: 17.5rem;
 }
-#publicityTicket img {
-  height: 28rem;
-}
+
 #publicityInfo {
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-wrap: nowrap;
   align-content: center;
-  padding-bottom: 2rem;
 }
 
 #publicityInfo h2 {
@@ -1253,6 +1252,7 @@ input[type="submit"].removeStyle {
   color: transparent;
   margin: 0;
 }
+
 #publicityInfo h3 {
   font-size: 2rem;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -1261,6 +1261,7 @@ input[type="submit"].removeStyle {
   background-clip: text;
   color: transparent;
 }
+
 button.publicityBuy {
   display: flex;
   align-items: center;
@@ -1282,16 +1283,33 @@ button.publicityBuy {
   background-clip: text;
   color: transparent;
 }
+
 #publicityInfo button:hover {
   box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 2px;
   filter: invert(15%) sepia(100%) saturate(5113%) hue-rotate(320deg)
     brightness(92%) contrast(105%);
   transition: filter 0.4s ease;
 }
+
 #publicityInfo img {
   height: 8rem;
   filter: invert(0%) sepia(36%) saturate(4843%) hue-rotate(122deg)
     brightness(87%) contrast(96%);
+}
+
+@media (min-width: 1366px) {
+  .publicityTicket img {
+    height: 30rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #publicity {
+    flex-direction: column;
+  }
+  .publicityTicket img {
+    height: 25rem;
+  }
 }
 
 /* ======== PL 7: Sugestões de Novos Videos Para Assistir ======== */
@@ -1395,6 +1413,10 @@ footer {
 
 #footer-text p {
   font-size: 1.5rem;
+}
+
+footer p a { 
+  color: white;
 }
 
 /* ======== Media Queries ======== */
@@ -1502,10 +1524,13 @@ footer {
   }
 }
 /* FIM DO MEDIA QUERY DOS DESTAQUES */
+/*PL 3*/
+/*PL 6*/
+/*PL 4*/
+/*PL 5*/
+/*PL 7*/
+/*FOOTER*/
 @media (max-width: 768px) {
-  #publicityTicket img {
-    height: 22rem;
-  }
   /*========Comunidades de vídeos temáticos========*/
   #communityWrapper {
     display: flex;
