@@ -1054,12 +1054,6 @@ header {
   background-position: center;
 }
 
-@media (min-width: 1279px) {
-  #concertsUpdates {
-    flex-direction: row;
-  }
-}
-
 .formField {
   display: flex;
   flex-direction: column;
@@ -1200,6 +1194,12 @@ input[type="submit"].removeStyle {
   #concertsUpdatesForm {
     min-width: 20%;
     max-width: 80%;
+  }
+}
+
+@media (min-width: 1279px) {
+  #concertsUpdates {
+    flex-direction: row;
   }
 }
 
