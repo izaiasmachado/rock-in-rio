@@ -2,25 +2,12 @@
 
 ## Desenvolvedores
 
-### Gabriel
-
-- [Linkedin](https://www.linkedin.com/in/gabriel-santos-298331253/)
-- [Github](https://github.com/GabVS4)
-
-### Izaias
-
-- [Linkedin](https://www.linkedin.com/in/izaiasmachado/)
-- [Github](https://github.com/izaiasmachado)
-
-### Marcos
-
-- [Linkedin](https://www.linkedin.com/in/marcosvinciusandradedesousa/)
-- [Github](https://github.com/MarcosVini9999)
-
-### William
-
-- [Linkedin](https://www.linkedin.com/in/william-bruno-sales/)
-- [Github](https://github.com/williambrunos)
+| **Desenvolvedor** | **Perfil Github** | **Perfil Linkedin** |
+| ------ | ------ | ------ |
+| Gabriel | [Github](https://github.com/GabVS4) | [Linkedin](https://www.linkedin.com/in/gabriel-santos-298331253/) |
+| Izaias | [Github](https://github.com/izaiasmachado) | [Linkedin](https://www.linkedin.com/in/izaiasmachado/) |
+| Marcos | [Github](https://github.com/MarcosVini9999) | [Linkedin](https://www.linkedin.com/in/marcosvinciusandradedesousa/) |
+| William | [Github](https://github.com/williambrunos) | [Linkedin](https://www.linkedin.com/in/william-bruno-sales/) |
 
 ## Sobre o Projeto
 Essa landing page reúne videos, fotos e informações relevantes sobre o Rock In Rio 2022.
@@ -37,9 +24,3 @@ No arquivo de [definições do projeto](./docs/definicoes-do-projeto.md) foram l
 
 ## Motivação
 Esse projeto é feito como atividade da disciplina de Tecnologias Web. Portanto, o [roteiro da atividade](./docs/roteiro.md) está disponível na documentação do projeto.
-
-## Equipe de Desenvolvimento
-- [Gabriel Vasconcelos Santos](https://github.com/GabVS4/)
-- [Izaias Machado Pessoa Neto](https://github.com/izaiasmachado)
-- [Marcos Vinicius Andrade de Sousa](https://github.com/MarcosVini9999)
-- [William Bruno Sales de Paula Lima](https://github.com/williambrunos)
